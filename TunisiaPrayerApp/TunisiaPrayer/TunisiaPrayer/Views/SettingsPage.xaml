@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TunisiaPrayer.Views.SettingsPage">
+    <ContentPage.Content>
+        <Grid>
+            <StackLayout>
+                <Label Text="Theme"  x:Name="theme"/>
+                <Picker Title="Select a Theme"
+                        x:Name="themes"/>
+                <Picker Title="State" 
+                        />
+                <Picker Title="Delegate" x:Name="delegatePicker"/>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
