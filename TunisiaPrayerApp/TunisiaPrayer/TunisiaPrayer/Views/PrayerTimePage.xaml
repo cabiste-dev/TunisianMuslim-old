@@ -40,7 +40,7 @@
                 HorizontalOptions="CenterAndExpand" FontSize="Large" TextColor="#FFFFFF"/>
             </StackLayout>
             <!--Times-->
-            <StackLayout Grid.Row="1" Grid.Column="2">
+            <StackLayout Grid.Row="1" Grid.Column="2" >
                 <ListView ItemsSource="{Binding prayersTime}" />
             </StackLayout>
 

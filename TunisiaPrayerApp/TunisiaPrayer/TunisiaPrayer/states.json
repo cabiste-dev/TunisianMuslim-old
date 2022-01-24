@@ -1,0 +1,1531 @@
+[{
+        "data": {
+            "gouvernorat": {
+                "id": 358,
+                "intituleAr": "اريانة",
+                "intituleAn": "Ariana"
+            },
+            "delegation": [{
+                    "id": 631,
+                    "intituleAr": "اريانة",
+                    "intituleAn": "Ariana"
+                },
+                {
+                    "id": 534,
+                    "intituleAr": "التظامن",
+                    "intituleAn": "Attadhamon"
+                },
+                {
+                    "id": 530,
+                    "intituleAr": "قلعة الأندلس",
+                    "intituleAn": "Kalaat El Andalous  "
+                },
+                {
+                    "id": 533,
+                    "intituleAr": "المنيهلة",
+                    "intituleAn": "Mnihla"
+                },
+                {
+                    "id": 531,
+                    "intituleAr": "رواد",
+                    "intituleAn": "Raoued"
+                },
+                {
+                    "id": 535,
+                    "intituleAr": "سيدي ثابت",
+                    "intituleAn": "Sidi Thabet"
+                },
+                {
+                    "id": 532,
+                    "intituleAr": "سكرة",
+                    "intituleAn": "Soukra"
+                }
+            ]
+        }
+    },
+    {
+        "data": {
+            "gouvernorat": {
+                "id": 362,
+                "intituleAr": "القصرين",
+                "intituleAn": "Kasserine"
+            },
+            "delegation": [{
+                    "id": 579,
+                    "intituleAr": "العيون",
+                    "intituleAn": "El Ayoun"
+                },
+                {
+                    "id": 577,
+                    "intituleAr": "فريانة",
+                    "intituleAn": "Feriana"
+                },
+                {
+                    "id": 578,
+                    "intituleAr": "فوسانة",
+                    "intituleAn": "Foussana"
+                },
+                {
+                    "id": 582,
+                    "intituleAr": "حاسي الفريد",
+                    "intituleAn": "Hassi Ferid"
+                },
+                {
+                    "id": 574,
+                    "intituleAr": "حيدرة",
+                    "intituleAn": "Hidra"
+                },
+                {
+                    "id": 581,
+                    "intituleAr": "جدليان",
+                    "intituleAn": "Jedliane"
+                },
+                {
+                    "id": 635,
+                    "intituleAr": "القصرين",
+                    "intituleAn": "Kasserine"
+                },
+                {
+                    "id": 580,
+                    "intituleAr": "ماجل بلعباس",
+                    "intituleAn": "Majel Bel Abbes"
+                },
+                {
+                    "id": 576,
+                    "intituleAr": "سبيبة",
+                    "intituleAn": "Sbiba"
+                },
+                {
+                    "id": 575,
+                    "intituleAr": "سبيطلة",
+                    "intituleAn": "Sbitla"
+                },
+                {
+                    "id": 573,
+                    "intituleAr": "تالة",
+                    "intituleAn": "Tala"
+                }
+            ]
+        }
+    },
+    {
+        "data": {
+            "gouvernorat": {
+                "id": 357,
+                "intituleAr": "القيروان",
+                "intituleAn": "Kairouan"
+            },
+            "delegation": [{
+                    "id": 528,
+                    "intituleAr": "بوحجلة",
+                    "intituleAn": "Bou Hajla"
+                },
+                {
+                    "id": 522,
+                    "intituleAr": "الشبيكة",
+                    "intituleAn": "Chebika"
+                },
+                {
+                    "id": 529,
+                    "intituleAr": "الشراردة",
+                    "intituleAn": "Chrarda"
+                },
+                {
+                    "id": 524,
+                    "intituleAr": "العلاء",
+                    "intituleAn": "El Alaa "
+                },
+                {
+                    "id": 523,
+                    "intituleAr": "حفوز",
+                    "intituleAn": "Haffouz"
+                },
+                {
+                    "id": 526,
+                    "intituleAr": "حاجب العيون",
+                    "intituleAn": "Hajeb El Ayoun"
+                },
+                {
+                    "id": 630,
+                    "intituleAr": "القيروان",
+                    "intituleAn": "Kairouan"
+                },
+                {
+                    "id": 527,
+                    "intituleAr": "نصرالله",
+                    "intituleAn": "Nasrallah"
+                },
+                {
+                    "id": 525,
+                    "intituleAr": "الوسلاتية",
+                    "intituleAn": "Oueslatia"
+                },
+                {
+                    "id": 521,
+                    "intituleAr": "السبيخة",
+                    "intituleAn": "Sebikha"
+                }
+            ]
+        }
+    },
+    {
+        "data": {
+            "gouvernorat": {
+                "id": 363,
+                "intituleAr": "الكاف",
+                "intituleAn": "Le kef"
+            },
+            "delegation": [{
+                    "id": 590,
+                    "intituleAr": "الدهماني",
+                    "intituleAn": "Dahmani"
+                },
+                {
+                    "id": 583,
+                    "intituleAr": "القصور",
+                    "intituleAn": "El Ksour"
+                },
+                {
+                    "id": 585,
+                    "intituleAr": "الجريسة",
+                    "intituleAn": "Jerissa"
+                },
+                {
+                    "id": 587,
+                    "intituleAr": "القلعة الخصبة",
+                    "intituleAn": "Kalâa El Khasba"
+                },
+                {
+                    "id": 588,
+                    "intituleAr": "قلعة السنان",
+                    "intituleAn": "Kalaat Sinane"
+                },
+                {
+                    "id": 636,
+                    "intituleAr": "الكاف",
+                    "intituleAn": "Le Kef"
+                },
+                {
+                    "id": 584,
+                    "intituleAr": "السرس",
+                    "intituleAn": "Le Sers"
+                },
+                {
+                    "id": 589,
+                    "intituleAr": "نبر",
+                    "intituleAn": "Nebeur"
+                },
+                {
+                    "id": 591,
+                    "intituleAr": "ساقية سيدي يوسف",
+                    "intituleAn": "Sakiet Sidi Youssef"
+                },
+                {
+                    "id": 586,
+                    "intituleAr": "تاجروين",
+                    "intituleAn": "Tejerouine"
+                },
+                {
+                    "id": 1523,
+                    "intituleAr": "الطويرف",
+                    "intituleAn": "Tourief"
+                }
+            ]
+        }
+    },
+    {
+        "data": {
+            "gouvernorat": {
+                "id": 364,
+                "intituleAr": "المنستير",
+                "intituleAn": "Monastir"
+            },
+            "delegation": [{
+                    "id": 601,
+                    "intituleAr": "البقالطة",
+                    "intituleAn": "Bekalta"
+                },
+                {
+                    "id": 603,
+                    "intituleAr": "بنبلة",
+                    "intituleAn": "Benbla"
+                },
+                {
+                    "id": 597,
+                    "intituleAr": "بني حسان",
+                    "intituleAn": "Beni Hassan"
+                },
+                {
+                    "id": 595,
+                    "intituleAr": "جمال",
+                    "intituleAn": "Jammel"
+                },
+                {
+                    "id": 602,
+                    "intituleAr": "قصر هلال",
+                    "intituleAn": "Ksar Helal"
+                },
+                {
+                    "id": 599,
+                    "intituleAr": "قصيبة المديوني",
+                    "intituleAn": "Ksibet Medyouni"
+                },
+                {
+                    "id": 598,
+                    "intituleAr": "المكنين",
+                    "intituleAn": "Moknine"
+                },
+                {
+                    "id": 637,
+                    "intituleAr": "المنستير",
+                    "intituleAn": "Monastir"
+                },
+                {
+                    "id": 593,
+                    "intituleAr": "الوردانين",
+                    "intituleAn": "Ouerdanine"
+                },
+                {
+                    "id": 592,
+                    "intituleAr": "الساحلين",
+                    "intituleAn": "Sahline"
+                },
+                {
+                    "id": 600,
+                    "intituleAr": "صيادة",
+                    "intituleAn": "Sayada Lamta Bouhjar"
+                },
+                {
+                    "id": 594,
+                    "intituleAr": "طبلبة",
+                    "intituleAn": "Teboulba"
+                },
+                {
+                    "id": 596,
+                    "intituleAr": "زرامدين",
+                    "intituleAn": "Zeramdine"
+                }
+            ]
+        }
+    },
+    {
+        "data": {
+            "gouvernorat": {
+                "id": 345,
+                "intituleAr": "المهدية",
+                "intituleAn": "Mahdia"
+            },
+            "delegation": [{
+                    "id": 427,
+                    "intituleAr": "بومرداس",
+                    "intituleAn": "Boumerdes"
+                },
+                {
+                    "id": 424,
+                    "intituleAr": "الشابة",
+                    "intituleAn": "Chebba"
+                },
+                {
+                    "id": 429,
+                    "intituleAr": "شربان",
+                    "intituleAn": "Chorbane"
+                },
+                {
+                    "id": 619,
+                    "intituleAr": "الجم",
+                    "intituleAn": "El Jem"
+                },
+                {
+                    "id": 430,
+                    "intituleAr": "هبيرة",
+                    "intituleAn": "Hbira"
+                },
+                {
+                    "id": 423,
+                    "intituleAr": "قصور الساف",
+                    "intituleAn": "Ksour Essef"
+                },
+                {
+                    "id": 618,
+                    "intituleAr": "المهدية",
+                    "intituleAn": "Mahdia"
+                },
+                {
+                    "id": 425,
+                    "intituleAr": "مللولش",
+                    "intituleAn": "Malloulech"
+                },
+                {
+                    "id": 431,
+                    "intituleAr": "أولاد شامخ",
+                    "intituleAn": "Ouled Chamekh"
+                },
+                {
+                    "id": 1084,
+                    "intituleAr": "الرجيش",
+                    "intituleAn": "Rejiche"
+                },
+                {
+                    "id": 426,
+                    "intituleAr": "سيدي علوان",
+                    "intituleAn": "Sidi Alouane"
+                },
+                {
+                    "id": 428,
+                    "intituleAr": "السواسي",
+                    "intituleAn": "Souassi"
+                }
+            ]
+        }
+    },
+    {
+        "data": {
+            "gouvernorat": {
+                "id": 356,
+                "intituleAr": "باجة",
+                "intituleAn": "Beja"
+            },
+            "delegation": [{
+                    "id": 515,
+                    "intituleAr": "عمدون",
+                    "intituleAn": "Amdoun"
+                },
+                {
+                    "id": 629,
+                    "intituleAr": "باجة",
+                    "intituleAn": "Beja"
+                },
+                {
+                    "id": 519,
+                    "intituleAr": "قبلاط",
+                    "intituleAn": "Goubellat"
+                },
+                {
+                    "id": 520,
+                    "intituleAr": "مجاز الباب",
+                    "intituleAn": "Mejez El Bab"
+                },
+                {
+                    "id": 514,
+                    "intituleAr": "نفزة",
+                    "intituleAn": "Nefza"
+                },
+                {
+                    "id": 518,
+                    "intituleAr": "تبرسق",
+                    "intituleAn": "Teboursouk"
+                },
+                {
+                    "id": 517,
+                    "intituleAr": "تستور",
+                    "intituleAn": "Testour"
+                },
+                {
+                    "id": 516,
+                    "intituleAr": "تيبار",
+                    "intituleAn": "Tibar"
+                }
+            ]
+        }
+    },
+    {
+        "data": {
+            "gouvernorat": {
+                "id": 349,
+                "intituleAr": "بن عروس",
+                "intituleAn": "Ben Arous"
+            },
+            "delegation": [{
+                    "id": 622,
+                    "intituleAr": "بن عروس",
+                    "intituleAn": "Ben Arous"
+                },
+                {
+                    "id": 453,
+                    "intituleAr": "بومهل البساتين",
+                    "intituleAn": "Boumhel Bassatine"
+                },
+                {
+                    "id": 447,
+                    "intituleAr": "المروج",
+                    "intituleAn": "El Mourouj"
+                },
+                {
+                    "id": 450,
+                    "intituleAr": "الزهرة",
+                    "intituleAn": "Ezzahra"
+                },
+                {
+                    "id": 446,
+                    "intituleAr": "فوشانة",
+                    "intituleAn": "Fouchana"
+                },
+                {
+                    "id": 452,
+                    "intituleAr": "حمام الشط",
+                    "intituleAn": "Hammam Chatt"
+                },
+                {
+                    "id": 451,
+                    "intituleAr": "حمام الأنف",
+                    "intituleAn": "Hammam Lif"
+                },
+                {
+                    "id": 454,
+                    "intituleAr": "المدينة الجديدة",
+                    "intituleAn": "Medina Jedida"
+                },
+                {
+                    "id": 448,
+                    "intituleAr": "مقرين",
+                    "intituleAn": "Megrine"
+                },
+                {
+                    "id": 445,
+                    "intituleAr": "المحمدية",
+                    "intituleAn": "Mohamedia"
+                },
+                {
+                    "id": 444,
+                    "intituleAr": "مرناق",
+                    "intituleAn": "Mornag"
+                },
+                {
+                    "id": 449,
+                    "intituleAr": "رادس",
+                    "intituleAn": "Rades"
+                }
+            ]
+        }
+    },
+    {
+        "data": {
+            "gouvernorat": {
+                "id": 361,
+                "intituleAr": "بنزرت",
+                "intituleAn": "Bizerte"
+            },
+            "delegation": [{
+                    "id": 572,
+                    "intituleAr": "الختمين",
+                    "intituleAn": "Al Khitmin"
+                },
+                {
+                    "id": 569,
+                    "intituleAr": "المتلين",
+                    "intituleAn": "Al Matlin "
+                },
+                {
+                    "id": 571,
+                    "intituleAr": "عوسجة",
+                    "intituleAn": "Aousja"
+                },
+                {
+                    "id": 634,
+                    "intituleAr": "بنزرت",
+                    "intituleAn": "Bizerte"
+                },
+                {
+                    "id": 566,
+                    "intituleAr": "العالية",
+                    "intituleAn": "El Alia"
+                },
+                {
+                    "id": 563,
+                    "intituleAr": "غار الملح",
+                    "intituleAn": "Ghar El Melh"
+                },
+                {
+                    "id": 560,
+                    "intituleAr": "غزالة",
+                    "intituleAn": "Ghezala"
+                },
+                {
+                    "id": 558,
+                    "intituleAr": "جومين",
+                    "intituleAn": "Joumine"
+                },
+                {
+                    "id": 559,
+                    "intituleAr": "ماطر",
+                    "intituleAn": "Mateur"
+                },
+                {
+                    "id": 562,
+                    "intituleAr": "منزل برقيبة",
+                    "intituleAn": "Menzel Bourguiba"
+                },
+                {
+                    "id": 561,
+                    "intituleAr": "منزل جميل",
+                    "intituleAn": "Menzel Jemil"
+                },
+                {
+                    "id": 564,
+                    "intituleAr": "رأس الجبل",
+                    "intituleAn": "Ras Jebel"
+                },
+                {
+                    "id": 557,
+                    "intituleAr": "سجنان",
+                    "intituleAn": "Sejnane"
+                },
+                {
+                    "id": 565,
+                    "intituleAr": "تينجة",
+                    "intituleAn": "Tinja"
+                },
+                {
+                    "id": 567,
+                    "intituleAr": "أوتيك",
+                    "intituleAn": "Utique"
+                },
+                {
+                    "id": 568,
+                    "intituleAr": "جرزونة",
+                    "intituleAn": "Zarzouna"
+                },
+                {
+                    "id": 570,
+                    "intituleAr": "الزواوين",
+                    "intituleAn": "Zouaouine"
+                }
+            ]
+        }
+    },
+    {
+        "data": {
+            "gouvernorat": {
+                "id": 351,
+                "intituleAr": "تطاوين",
+                "intituleAn": "Tataouine"
+            },
+            "delegation": [{
+                    "id": 474,
+                    "intituleAr": "بئر الأحمر",
+                    "intituleAn": "Bir Lahmar"
+                },
+                {
+                    "id": 1524,
+                    "intituleAr": "بني مهيرة",
+                    "intituleAn": "Bni Mhira"
+                },
+                {
+                    "id": 475,
+                    "intituleAr": "برج الخضراء",
+                    "intituleAn": "Borj El Khadra"
+                },
+                {
+                    "id": 470,
+                    "intituleAr": "الذهيبة",
+                    "intituleAn": "Dehiba"
+                },
+                {
+                    "id": 476,
+                    "intituleAr": "البرمة",
+                    "intituleAn": "El Borma"
+                },
+                {
+                    "id": 473,
+                    "intituleAr": "غمراسن",
+                    "intituleAn": "Ghomrassen"
+                },
+                {
+                    "id": 471,
+                    "intituleAr": "رمادة",
+                    "intituleAn": "Remada"
+                },
+                {
+                    "id": 472,
+                    "intituleAr": "السمار",
+                    "intituleAn": "Smar"
+                },
+                {
+                    "id": 624,
+                    "intituleAr": "تطاوين",
+                    "intituleAn": "Tataouine"
+                }
+            ]
+        }
+    },
+    {
+        "data": {
+            "gouvernorat": {
+                "id": 352,
+                "intituleAr": "توزر",
+                "intituleAn": "Tozeur"
+            },
+            "delegation": [{
+                    "id": 478,
+                    "intituleAr": "دقاش",
+                    "intituleAn": "Degueche"
+                },
+                {
+                    "id": 481,
+                    "intituleAr": "حامة الجريد",
+                    "intituleAn": "Hammat Al Jarid"
+                },
+                {
+                    "id": 479,
+                    "intituleAr": "حزوة",
+                    "intituleAn": "Hazoua"
+                },
+                {
+                    "id": 477,
+                    "intituleAr": "نفطة",
+                    "intituleAn": "Nefta"
+                },
+                {
+                    "id": 480,
+                    "intituleAr": "تمغزة",
+                    "intituleAn": "Tameghza"
+                },
+                {
+                    "id": 625,
+                    "intituleAr": "توزر",
+                    "intituleAn": "Tozeur"
+                }
+            ]
+        }
+    },
+    {
+        "data": {
+            "gouvernorat": {
+                "id": 342,
+                "intituleAr": "تونس",
+                "intituleAn": "Tunis"
+            },
+            "delegation": [{
+                    "id": 404,
+                    "intituleAr": "باب بحر",
+                    "intituleAn": "Bab Bhar"
+                },
+                {
+                    "id": 395,
+                    "intituleAr": "باب سويقة",
+                    "intituleAn": "Bab Souika"
+                },
+                {
+                    "id": 394,
+                    "intituleAr": "باردو",
+                    "intituleAn": "Bardo"
+                },
+                {
+                    "id": 387,
+                    "intituleAr": "قرطاج",
+                    "intituleAn": "Carthage"
+                },
+                {
+                    "id": 389,
+                    "intituleAr": "حي الخضراء",
+                    "intituleAn": "Cite El Khadhra"
+                },
+                {
+                    "id": 397,
+                    "intituleAr": "الحرايرية",
+                    "intituleAn": "El Hrairia"
+                },
+                {
+                    "id": 400,
+                    "intituleAr": "كبارية",
+                    "intituleAn": "El Kabaria"
+                },
+                {
+                    "id": 390,
+                    "intituleAr": "المنزه",
+                    "intituleAn": "El Menzah"
+                },
+                {
+                    "id": 399,
+                    "intituleAr": "الوردية",
+                    "intituleAn": "El Ouardia"
+                },
+                {
+                    "id": 393,
+                    "intituleAr": "التحرير",
+                    "intituleAn": "Ettahrir"
+                },
+                {
+                    "id": 396,
+                    "intituleAr": "الزهور",
+                    "intituleAn": "Ezzouhour"
+                },
+                {
+                    "id": 401,
+                    "intituleAr": "جبل جلود",
+                    "intituleAn": "Jebel Jelloud"
+                },
+                {
+                    "id": 388,
+                    "intituleAr": "حلق الواد",
+                    "intituleAn": "Goulette"
+                },
+                {
+                    "id": 386,
+                    "intituleAr": "المرسى",
+                    "intituleAn": "La Marsa"
+                },
+                {
+                    "id": 403,
+                    "intituleAr": "المدينة",
+                    "intituleAn": "La Medina"
+                },
+                {
+                    "id": 406,
+                    "intituleAr": "الكرم",
+                    "intituleAn": "Le Kram"
+                },
+                {
+                    "id": 391,
+                    "intituleAr": "العمران",
+                    "intituleAn": "Omrane"
+                },
+                {
+                    "id": 392,
+                    "intituleAr": "العمران الأعلى",
+                    "intituleAn": "Omrane Superieur"
+                },
+                {
+                    "id": 402,
+                    "intituleAr": "سيدي البشير",
+                    "intituleAn": "Sidi El Bechir"
+                },
+                {
+                    "id": 398,
+                    "intituleAr": "سيدي حسين",
+                    "intituleAn": "Sidi Hassine"
+                },
+                {
+                    "id": 405,
+                    "intituleAr": "السيجومي",
+                    "intituleAn": "Sijoumi"
+                },
+                {
+                    "id": 615,
+                    "intituleAr": "مدينة تونس",
+                    "intituleAn": "Tunis"
+                }
+            ]
+        }
+    },
+    {
+        "data": {
+            "gouvernorat": {
+                "id": 354,
+                "intituleAr": "جندوبة",
+                "intituleAn": "Jendouba"
+            },
+            "delegation": [{
+                    "id": 498,
+                    "intituleAr": "عين دراهم",
+                    "intituleAn": "Ain Drahem"
+                },
+                {
+                    "id": 503,
+                    "intituleAr": "بلطة بوعوان",
+                    "intituleAn": "Balta Bou Aouane"
+                },
+                {
+                    "id": 499,
+                    "intituleAr": "بوسالم",
+                    "intituleAn": "Bou Salem"
+                },
+                {
+                    "id": 502,
+                    "intituleAr": "فرنانة",
+                    "intituleAn": "Fernana"
+                },
+                {
+                    "id": 501,
+                    "intituleAr": "غار الدماء",
+                    "intituleAn": "Ghardimaou"
+                },
+                {
+                    "id": 627,
+                    "intituleAr": "جندوبة",
+                    "intituleAn": "Jendouba"
+                },
+                {
+                    "id": 500,
+                    "intituleAr": "واد مليز",
+                    "intituleAn": "Oued Mliz"
+                },
+                {
+                    "id": 497,
+                    "intituleAr": "طبرقة",
+                    "intituleAn": "Tabarka"
+                }
+            ]
+        }
+    },
+    {
+        "data": {
+            "gouvernorat": {
+                "id": 343,
+                "intituleAr": "زغوان",
+                "intituleAn": "Zaghouan"
+            },
+            "delegation": [{
+                    "id": 410,
+                    "intituleAr": "بئر مشارقة",
+                    "intituleAn": "Bir Mcherga"
+                },
+                {
+                    "id": 411,
+                    "intituleAr": "الفحص",
+                    "intituleAn": "El Fahs"
+                },
+                {
+                    "id": 412,
+                    "intituleAr": "الناظور",
+                    "intituleAn": "Nadhour"
+                },
+                {
+                    "id": 413,
+                    "intituleAr": "صواف",
+                    "intituleAn": "Saouaf"
+                },
+                {
+                    "id": 616,
+                    "intituleAr": "زغوان",
+                    "intituleAn": "Zaghouan"
+                },
+                {
+                    "id": 409,
+                    "intituleAr": "الزريبة",
+                    "intituleAn": "Zeriba"
+                }
+            ]
+        }
+    },
+    {
+        "data": {
+            "gouvernorat": {
+                "id": 344,
+                "intituleAr": "سليانة",
+                "intituleAn": "Siliana"
+            },
+            "delegation": [{
+                    "id": 417,
+                    "intituleAr": "برقو",
+                    "intituleAn": "Bargou"
+                },
+                {
+                    "id": 420,
+                    "intituleAr": "بوعرادة",
+                    "intituleAn": "Bouarada"
+                },
+                {
+                    "id": 419,
+                    "intituleAr": "العروسة",
+                    "intituleAn": "El Aroussa"
+                },
+                {
+                    "id": 418,
+                    "intituleAr": "قعفور",
+                    "intituleAn": "Gaafour"
+                },
+                {
+                    "id": 414,
+                    "intituleAr": "كسرى",
+                    "intituleAn": "Kesra"
+                },
+                {
+                    "id": 421,
+                    "intituleAr": "الكريب",
+                    "intituleAn": "Le Krib"
+                },
+                {
+                    "id": 415,
+                    "intituleAr": "مكثر",
+                    "intituleAn": "Makther"
+                },
+                {
+                    "id": 416,
+                    "intituleAr": "الروحية",
+                    "intituleAn": "Rouhia"
+                },
+                {
+                    "id": 422,
+                    "intituleAr": "بورويس",
+                    "intituleAn": "Sidi Bou Rouis"
+                },
+                {
+                    "id": 617,
+                    "intituleAr": "سليانة",
+                    "intituleAn": "Siliana"
+                }
+            ]
+        }
+    },
+    {
+        "data": {
+            "gouvernorat": {
+                "id": 348,
+                "intituleAr": "سوسة",
+                "intituleAn": "Sousse"
+            },
+            "delegation": [{
+                    "id": 437,
+                    "intituleAr": "أكودة",
+                    "intituleAn": "Akouda"
+                },
+                {
+                    "id": 433,
+                    "intituleAr": "بوفيشة",
+                    "intituleAn": "Bouficha"
+                },
+                {
+                    "id": 434,
+                    "intituleAr": "النفيضة",
+                    "intituleAn": "Enfida"
+                },
+                {
+                    "id": 438,
+                    "intituleAr": "حمام سوسة",
+                    "intituleAn": "Hammam Sousse"
+                },
+                {
+                    "id": 435,
+                    "intituleAr": "هرقلة",
+                    "intituleAn": "Hergla"
+                },
+                {
+                    "id": 439,
+                    "intituleAr": "القلعة الكبيرة",
+                    "intituleAn": "Kalaa Kebira"
+                },
+                {
+                    "id": 443,
+                    "intituleAr": "القلعة الصغيرة",
+                    "intituleAn": "Kalaa Seghira"
+                },
+                {
+                    "id": 442,
+                    "intituleAr": "كندار",
+                    "intituleAn": "Koundar"
+                },
+                {
+                    "id": 440,
+                    "intituleAr": "مساكن",
+                    "intituleAn": "Msaken"
+                },
+                {
+                    "id": 436,
+                    "intituleAr": "سيدي بوعلي",
+                    "intituleAn": "Sidi Bouali"
+                },
+                {
+                    "id": 441,
+                    "intituleAr": "سيدي الهاني",
+                    "intituleAn": "Sidi Elheni"
+                },
+                {
+                    "id": 621,
+                    "intituleAr": "سوسة",
+                    "intituleAn": "Sousse"
+                }
+            ]
+        }
+    },
+    {
+        "data": {
+            "gouvernorat": {
+                "id": 355,
+                "intituleAr": "سيدي بوزيد",
+                "intituleAn": "Sidi Bouzid"
+            },
+            "delegation": [{
+                    "id": 508,
+                    "intituleAr": "بئر الحفي",
+                    "intituleAn": "Bir El Hafey"
+                },
+                {
+                    "id": 1522,
+                    "intituleAr": "الهيشرية",
+                    "intituleAn": "Hichria"
+                },
+                {
+                    "id": 506,
+                    "intituleAr": "جلمة",
+                    "intituleAn": "Jelma"
+                },
+                {
+                    "id": 505,
+                    "intituleAr": "المكناسي",
+                    "intituleAn": "Meknassi"
+                },
+                {
+                    "id": 510,
+                    "intituleAr": "منزل بو زيان",
+                    "intituleAn": "Menzel Bouzayane"
+                },
+                {
+                    "id": 511,
+                    "intituleAr": "المزونة",
+                    "intituleAn": "Mezouna"
+                },
+                {
+                    "id": 512,
+                    "intituleAr": "أولاد حفوز",
+                    "intituleAn": "Ouled Haffouz"
+                },
+                {
+                    "id": 504,
+                    "intituleAr": "الرقاب",
+                    "intituleAn": "Regueb"
+                },
+                {
+                    "id": 507,
+                    "intituleAr": "سبالة أولاد عسكر",
+                    "intituleAn": "Sabbalet Ouled Asker"
+                },
+                {
+                    "id": 509,
+                    "intituleAr": "سيدي علي بن عون",
+                    "intituleAn": "Sidi Ali Ben Aoun"
+                },
+                {
+                    "id": 628,
+                    "intituleAr": "سيدي بوزيد",
+                    "intituleAn": "Sidi Bouzid"
+                },
+                {
+                    "id": 513,
+                    "intituleAr": "سوق الجديد",
+                    "intituleAn": "Souk Jedid"
+                }
+            ]
+        }
+    },
+    {
+        "data": {
+            "gouvernorat": {
+                "id": 359,
+                "intituleAr": "صفاقس",
+                "intituleAn": "Sfax"
+            },
+            "delegation": [{
+                    "id": 540,
+                    "intituleAr": "عقارب",
+                    "intituleAn": "Agareb"
+                },
+                {
+                    "id": 538,
+                    "intituleAr": "بئر علي بن خليفة",
+                    "intituleAn": "Bir Ali Ben Khelifa"
+                },
+                {
+                    "id": 545,
+                    "intituleAr": "العامرة",
+                    "intituleAn": "El Amra"
+                },
+                {
+                    "id": 541,
+                    "intituleAr": "الحنشة",
+                    "intituleAn": "El Hencha"
+                },
+                {
+                    "id": 539,
+                    "intituleAr": "الغريبة",
+                    "intituleAn": "Ghraiba"
+                },
+                {
+                    "id": 536,
+                    "intituleAr": "جبنيانة",
+                    "intituleAn": "Jebiniana"
+                },
+                {
+                    "id": 543,
+                    "intituleAr": "قرقنة العطايا",
+                    "intituleAn": "Kerkennah El Attaya"
+                },
+                {
+                    "id": 544,
+                    "intituleAr": "قرقنة مليتة",
+                    "intituleAn": "Kerkennah Mellita"
+                },
+                {
+                    "id": 537,
+                    "intituleAr": "المحرس",
+                    "intituleAn": "Mahres"
+                },
+                {
+                    "id": 542,
+                    "intituleAr": "منزل شاكر",
+                    "intituleAn": "Menzel Chaker"
+                },
+                {
+                    "id": 548,
+                    "intituleAr": "ساقية الداير",
+                    "intituleAn": "Sakiet Eddaier"
+                },
+                {
+                    "id": 547,
+                    "intituleAr": "ساقية الزيت",
+                    "intituleAn": "Sakiet Ezzit"
+                },
+                {
+                    "id": 632,
+                    "intituleAr": "صفاقس",
+                    "intituleAn": "Sfax"
+                },
+                {
+                    "id": 546,
+                    "intituleAr": "الصخيرة",
+                    "intituleAn": "Skhira"
+                },
+                {
+                    "id": 549,
+                    "intituleAr": "تينة",
+                    "intituleAn": "Tina"
+                }
+            ]
+        }
+    },
+    {
+        "data": {
+            "gouvernorat": {
+                "id": 347,
+                "intituleAr": "قابس",
+                "intituleAn": "Gabes"
+            },
+            "delegation": [{
+                    "id": 1024,
+                    "intituleAr": "الحامة",
+                    "intituleAn": "El Hamma"
+                },
+                {
+                    "id": 620,
+                    "intituleAr": "قابس",
+                    "intituleAn": "Gabes"
+                },
+                {
+                    "id": 1019,
+                    "intituleAr": "غنوش",
+                    "intituleAn": "Ghannouch"
+                },
+                {
+                    "id": 1020,
+                    "intituleAr": "مارث",
+                    "intituleAn": "Mareth"
+                },
+                {
+                    "id": 1022,
+                    "intituleAr": "مطماطا",
+                    "intituleAn": "Matmata"
+                },
+                {
+                    "id": 1023,
+                    "intituleAr": "مطماطا الجديدة",
+                    "intituleAn": "Matmata Nouvelle"
+                },
+                {
+                    "id": 1021,
+                    "intituleAr": "منزل حبيب",
+                    "intituleAn": "Menzel Habib"
+                },
+                {
+                    "id": 1025,
+                    "intituleAr": "المطوية",
+                    "intituleAn": "Metouia"
+                }
+            ]
+        }
+    },
+    {
+        "data": {
+            "gouvernorat": {
+                "id": 1012,
+                "intituleAr": "قبلي",
+                "intituleAn": "Kebili"
+            },
+            "delegation": [{
+                    "id": 484,
+                    "intituleAr": "دوز",
+                    "intituleAn": "Douz"
+                },
+                {
+                    "id": 485,
+                    "intituleAr": "الفوار",
+                    "intituleAn": "El Faouar"
+                },
+                {
+                    "id": 482,
+                    "intituleAr": "قبلي",
+                    "intituleAn": "Kebili"
+                },
+                {
+                    "id": 486,
+                    "intituleAr": "المطروحة",
+                    "intituleAn": "Matrouha"
+                },
+                {
+                    "id": 487,
+                    "intituleAr": "رجيم معتوق",
+                    "intituleAn": "Rjim Maatoug"
+                },
+                {
+                    "id": 483,
+                    "intituleAr": "سوق الأحد",
+                    "intituleAn": "Souk El Ahad"
+                }
+            ]
+        }
+    },
+    {
+        "data": {
+            "gouvernorat": {
+                "id": 365,
+                "intituleAr": "قفصة",
+                "intituleAn": "Gafsa"
+            },
+            "delegation": [{
+                    "id": 612,
+                    "intituleAr": "بلخير",
+                    "intituleAn": "Belkhir"
+                },
+                {
+                    "id": 611,
+                    "intituleAr": "القطار",
+                    "intituleAn": "El Guettar"
+                },
+                {
+                    "id": 608,
+                    "intituleAr": "القصر",
+                    "intituleAn": "El Ksar"
+                },
+                {
+                    "id": 638,
+                    "intituleAr": "قفصة",
+                    "intituleAn": "Gafsa"
+                },
+                {
+                    "id": 607,
+                    "intituleAr": "المظيلة",
+                    "intituleAn": "Mdhilla"
+                },
+                {
+                    "id": 606,
+                    "intituleAr": "المتلوي",
+                    "intituleAn": "Metlaoui"
+                },
+                {
+                    "id": 604,
+                    "intituleAr": "أم العرايس",
+                    "intituleAn": "Moulares"
+                },
+                {
+                    "id": 605,
+                    "intituleAr": "الرديف",
+                    "intituleAn": "Redyef"
+                },
+                {
+                    "id": 609,
+                    "intituleAr": "السند",
+                    "intituleAn": "Sened"
+                },
+                {
+                    "id": 610,
+                    "intituleAr": "سيدي عيش",
+                    "intituleAn": "Sidi Aich"
+                }
+            ]
+        }
+    },
+    {
+        "data": {
+            "gouvernorat": {
+                "id": 353,
+                "intituleAr": "مدنين",
+                "intituleAn": "Medenine"
+            },
+            "delegation": [{
+                    "id": 488,
+                    "intituleAr": "بن قردان",
+                    "intituleAn": "Ben Guerdene"
+                },
+                {
+                    "id": 489,
+                    "intituleAr": "بني خداش",
+                    "intituleAn": "Beni Khedach"
+                },
+                {
+                    "id": 493,
+                    "intituleAr": "جربة آجيم",
+                    "intituleAn": "Djerba Ajim"
+                },
+                {
+                    "id": 491,
+                    "intituleAr": "جربة الماي",
+                    "intituleAn": "Djerba El May"
+                },
+                {
+                    "id": 494,
+                    "intituleAr": "جربة حومة السوق",
+                    "intituleAn": "Djerba Houmt Souk"
+                },
+                {
+                    "id": 492,
+                    "intituleAr": "جربة ميدون",
+                    "intituleAn": "Djerba Midoun"
+                },
+                {
+                    "id": 626,
+                    "intituleAr": "مدنين",
+                    "intituleAn": "Medenine"
+                },
+                {
+                    "id": 496,
+                    "intituleAr": "سيدي مخلوف",
+                    "intituleAn": "Sidi Makhlouf"
+                },
+                {
+                    "id": 490,
+                    "intituleAr": "جرجيس",
+                    "intituleAn": "Zarzis"
+                }
+            ]
+        }
+    },
+    {
+        "data": {
+            "gouvernorat": {
+                "id": 360,
+                "intituleAr": "منوبة",
+                "intituleAn": "Manouba"
+            },
+            "delegation": [{
+                    "id": 552,
+                    "intituleAr": "برج العامري",
+                    "intituleAn": "Borj El Amri"
+                },
+                {
+                    "id": 554,
+                    "intituleAr": "دوار هيشر",
+                    "intituleAn": "Douar Hicher"
+                },
+                {
+                    "id": 551,
+                    "intituleAr": "البطان",
+                    "intituleAn": "El Battan"
+                },
+                {
+                    "id": 550,
+                    "intituleAr": "الجديدة",
+                    "intituleAn": "Jedaida"
+                },
+                {
+                    "id": 633,
+                    "intituleAr": "منوبة",
+                    "intituleAn": "Manouba"
+                },
+                {
+                    "id": 555,
+                    "intituleAr": "المرناقية",
+                    "intituleAn": "Mornaguia"
+                },
+                {
+                    "id": 553,
+                    "intituleAr": "واد الليل",
+                    "intituleAn": "Oued Ellil"
+                },
+                {
+                    "id": 556,
+                    "intituleAr": "طبربة",
+                    "intituleAn": "Tebourba"
+                }
+            ]
+        }
+    },
+    {
+        "data": {
+            "gouvernorat": {
+                "id": 350,
+                "intituleAr": "نابل",
+                "intituleAn": "Nabeul"
+            },
+            "delegation": [{
+                    "id": 467,
+                    "intituleAr": "بني خلاد",
+                    "intituleAn": "Beni Khalled"
+                },
+                {
+                    "id": 460,
+                    "intituleAr": "بني خيار ",
+                    "intituleAn": "Beni Khiar"
+                },
+                {
+                    "id": 463,
+                    "intituleAr": "بوعرقوب",
+                    "intituleAn": "Bou Argoub"
+                },
+                {
+                    "id": 468,
+                    "intituleAr": "دار شعبان الفهري",
+                    "intituleAn": "Dar Chaabane Elfehri"
+                },
+                {
+                    "id": 466,
+                    "intituleAr": "الهوارية",
+                    "intituleAn": "El Haouaria"
+                },
+                {
+                    "id": 457,
+                    "intituleAr": "الميدة",
+                    "intituleAn": "El Mida"
+                },
+                {
+                    "id": 464,
+                    "intituleAr": "قرمبالية",
+                    "intituleAn": "Grombalia"
+                },
+                {
+                    "id": 469,
+                    "intituleAr": "حمام الغزاز",
+                    "intituleAn": "Hammam Ghezaz"
+                },
+                {
+                    "id": 461,
+                    "intituleAr": "الحمامات",
+                    "intituleAn": "Hammamet"
+                },
+                {
+                    "id": 455,
+                    "intituleAr": "قليبية",
+                    "intituleAn": "Kelibia"
+                },
+                {
+                    "id": 459,
+                    "intituleAr": "قربة",
+                    "intituleAn": "Korba"
+                },
+                {
+                    "id": 458,
+                    "intituleAr": "منزل بوزلفة",
+                    "intituleAn": "Menzel Bouzelfa"
+                },
+                {
+                    "id": 456,
+                    "intituleAr": "منزل تميم",
+                    "intituleAn": "Menzel Temime"
+                },
+                {
+                    "id": 623,
+                    "intituleAr": "نابل",
+                    "intituleAn": "Nabeul"
+                },
+                {
+                    "id": 465,
+                    "intituleAr": "سليمان",
+                    "intituleAn": "Slimane"
+                },
+                {
+                    "id": 462,
+                    "intituleAr": "تاكلسة",
+                    "intituleAn": "Takelsa"
+                }
+            ]
+        }
+    }
+]

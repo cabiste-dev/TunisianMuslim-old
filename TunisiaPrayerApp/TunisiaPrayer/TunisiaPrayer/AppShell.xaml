@@ -87,6 +87,9 @@
     <FlyoutItem Title="prayers" Icon="icon_feed.png">
         <ShellContent Route="PrayerTimePage" ContentTemplate="{DataTemplate local:PrayerTimePage}" />
     </FlyoutItem>
+    <FlyoutItem Title="test" Icon="icon_feed.png">
+        <ShellContent Route="test" ContentTemplate="{DataTemplate local:test}" />
+    </FlyoutItem>
 
     <!-- When the Flyout is visible this will be a menu item you can tie a click behavior to  -->
     <MenuItem Text="Logout" StyleClass="MenuItemLayoutStyle" Clicked="OnMenuItemClicked">

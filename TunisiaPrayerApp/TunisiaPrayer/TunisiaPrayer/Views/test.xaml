@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TunisiaPrayer.Views.test">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="DirectoryDisplayLabel"
+                Text="the directories are:"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" 
+                   TextColor="Black"/>
+            <Label x:Name="fileDisplayLabel"
+                Text="the files are:"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" 
+                   TextColor="Black"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
