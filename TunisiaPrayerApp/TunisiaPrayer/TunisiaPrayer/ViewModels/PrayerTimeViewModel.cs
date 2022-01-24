@@ -11,11 +11,7 @@ namespace TunisiaPrayer.ViewModels
         public class PrayerTimeViewModel : BindableObject
         {
             public string TimeNow { get; set; }
-            public string sobh { get; set; }
-            public string dhohr { get; set; }
-            public string aser { get; set; }
-            public string magreb { get; set; }
-            public string isha { get; set; }
+            public List<string> prayersTime { get; set; }
             public ICommand RefreshTime { get; }
 
             public PrayerTimeViewModel()
@@ -25,29 +21,15 @@ namespace TunisiaPrayer.ViewModels
             }
             public async void SetTimes()
             {
-                Prayer rootobject = await Prayers.GetTime(1, 1);
+                prayersTime = await Prayers.GetTime(361 , 634);
                 TimeNow = DateTime.Now.ToString("dd-MM-yyyy");
-                sobh = rootobject.data.sobh;
-                dhohr = rootobject.data.dhohr;
-                aser = rootobject.data.aser;
-                magreb = rootobject.data.magreb;
-                isha = rootobject.data.isha;
-                OnPropertyChanged(nameof(sobh));
+                OnPropertyChanged(nameof(prayersTime));
             }
 
-            void tet()
-            {
-                sobh = "test";
-                OnPropertyChanged();
-            }
+            
 
             void OnRefresh()
             {
-                sobh = "...";
-                dhohr = "...";
-                aser = "...";
-                magreb = "...";
-                isha = "...";
                 SetTimes();
             }
         }

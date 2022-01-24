@@ -1,7 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="TunisiaPrayer.Views.PrayerTimePage">
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:viewmodels="clr-namespace:TunisiaPrayer.ViewModels"
+             x:Class="TunisiaPrayer.Views.PrayerTimePage"
+             x:DataType="viewmodels:PrayerTimeViewModel"
+             BackgroundColor="Black">
+
+    <ContentPage.BindingContext>
+        <viewmodels:PrayerTimeViewModel/>
+    </ContentPage.BindingContext>
+    
     <ContentPage.Content>
         <Grid RowDefinitions="2*,6*,2*" ColumnDefinitions="*,4*,4*,*">
 
@@ -34,21 +41,7 @@
             </StackLayout>
             <!--Times-->
             <StackLayout Grid.Row="1" Grid.Column="2">
-                <Label x:Name="sobh" 
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" FontSize="Large" TextColor="#FFFFFF" Text="{Binding sobh}"/>
-                <Label x:Name="dhohr" 
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" FontSize="Large" TextColor="#FFFFFF" Text="{Binding dhohr}"/>
-                <Label x:Name="aser"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" FontSize="Large" TextColor="#FFFFFF" Text="{Binding aser}"/>
-                <Label x:Name="magreb" 
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" FontSize="Large" TextColor="#FFFFFF" Text="{Binding magreb}"/>
-                <Label x:Name="isha" 
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" FontSize="Large" TextColor="#FFFFFF" Text="{Binding isha}"/>
+                <ListView ItemsSource="{Binding prayersTime}" />
             </StackLayout>
 
             <!--control buttons-->

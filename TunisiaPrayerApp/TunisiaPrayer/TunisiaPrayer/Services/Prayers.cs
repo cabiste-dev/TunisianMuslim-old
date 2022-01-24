@@ -10,7 +10,7 @@ namespace TunisiaPrayer.Services
 {
     public class Prayers
     {
-        public static async Task<Prayer> GetTime(int stateId, int delegateId)
+        public static async Task<List<string>> GetTime(int stateId, int delegateId)
         {
             string url = "https://www.meteo.tn/horaire_gouvernorat/" + DateTime.Now.ToString("yyyy-MM-dd") + $"/{stateId}/{delegateId}";
             HttpClientHandler clientHandler = new HttpClientHandler();
@@ -26,7 +26,7 @@ namespace TunisiaPrayer.Services
                 Items = jsonSerializer.Deserialize<Prayer>(jsonReader);
             }
 
-            return Items;
+            return new List<string>() { Items.data.sobh, Items.data.dhohr, Items.data.aser, Items.data.magreb, Items.data.isha };
         }
 
         public static async Task<Prayer> GetTimeExperimental()
