@@ -4,7 +4,7 @@ using System.Text;
 
 namespace TunisiaPrayer.ViewModels
 {
-    internal class SettingsViewModel
+    internal class SettingsViewModel : BaseViewModel
     {
 
     }
