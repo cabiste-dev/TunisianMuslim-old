@@ -5,8 +5,8 @@
     <ContentPage.Content>
         <Grid>
             <StackLayout>
-                
-                <Picker Title="State" />
+
+                <Picker Title="State" x:Name="statePicker"/>
                 <Picker Title="Delegate" x:Name="delegatePicker"/>
             </StackLayout>
         </Grid>

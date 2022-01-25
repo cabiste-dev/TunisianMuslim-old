@@ -1,24 +1,24 @@
-﻿using System;
+﻿using System.Collections.Generic;
+using TunisiaPrayer.Models;
 using TunisiaPrayer.Services;
-using TunisiaPrayer.Views;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace TunisiaPrayer
 {
     public partial class App : Application
     {
-
+        public static List<Rootobject> statesData { get; set; }
         public App()
         {
             InitializeComponent();
-
             DependencyService.Register<MockDataStore>();
             MainPage = new AppShell();
         }
 
-        protected override void OnStart()
+        protected override async void OnStart()
         {
+            Something something = new Something();
+            statesData = await something.LoadData();
         }
 
         protected override void OnSleep()
