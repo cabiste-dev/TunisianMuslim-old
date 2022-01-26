@@ -17,7 +17,7 @@ namespace TunisiaPrayer
 
         protected override async void OnStart()
         {
-            Something something = new Something();
+            StateService something = new StateService();
             statesData = await something.LoadData();
         }
 

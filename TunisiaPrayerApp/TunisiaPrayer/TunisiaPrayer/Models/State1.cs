@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿
+using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
@@ -7,23 +8,35 @@ using System.Threading.Tasks;
 namespace TunisiaPrayer.Models
 {
 
-    public class Rootobject
+    
+    public class Rootobject1
     {
-        public int Id { get; set; }
-        public string NameAr { get; set; }
-        public string NameEn { get; set; }
-        public List<Delegation> Delegations { get; set; }
+        public Data data { get; set; }
     }
 
-    public class Delegation
+    public class Data
     {
-        public int Id { get; set; }
-        public string NameAr { get; set; }
-        public string NameEn { get; set; }
+        public Gouvernorat gouvernorat { get; set; }
+        public Delegation[] delegation { get; set; }
     }
-    public class StateService
-    {
 
+    public class Gouvernorat
+    {
+        public short id { get; set; }
+        public string intituleAr { get; set; }
+        public string intituleAn { get; set; }
+    }
+
+    public class Delegation1
+    {
+        public short id { get; set; }
+        public string intituleAr { get; set; }
+        public string intituleAn { get; set; }
+    }
+
+    public class Something
+    {
+        
         public async Task<List<Rootobject>> LoadData()
         {
             var assembly = IntrospectionExtensions.GetTypeInfo(typeof(App)).Assembly;

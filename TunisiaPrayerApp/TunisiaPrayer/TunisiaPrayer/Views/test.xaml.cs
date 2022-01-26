@@ -20,11 +20,11 @@ namespace TunisiaPrayer.Views
             InitializeComponent();
             try
             {
-                DirectoryDisplayLabel.Text = App.statesData[0].data.gouvernorat.intituleAr;
+                DirectoryDisplayLabel.Text = App.statesData[0].NameEn;
                 
                 for(short i = 0; i< App.statesData.Count; i++)
                 {
-                    statePicker.Items.Add(App.statesData[i].data.gouvernorat.intituleAn);
+                    statePicker.Items.Add(App.statesData[i].NameEn);
                 }
             }
             catch (Exception ex)
@@ -47,7 +47,7 @@ namespace TunisiaPrayer.Views
 
             deserializedProduct = JsonConvert.DeserializeObject<List<Rootobject>>(text);
 
-            DirectoryDisplayLabel.Text = $"it worked :D \n there are {deserializedProduct[2].data.gouvernorat.id}";
+            DirectoryDisplayLabel.Text = $"it worked :D \n there are {deserializedProduct.Count}";
             //OnPropertyChanged(nameof(DirectoryDisplayLabel.Text));
         }
     }

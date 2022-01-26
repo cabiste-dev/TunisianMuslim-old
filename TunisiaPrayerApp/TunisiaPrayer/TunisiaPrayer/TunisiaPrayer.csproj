@@ -7,10 +7,14 @@
 
   <ItemGroup>
     <None Remove="states.json" />
+    <None Remove="states1.json" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="states.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="states1.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>
