@@ -15,23 +15,28 @@ namespace TunisiaPrayer.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class test : ContentPage
     {
+        public int selectedState { get; set; } = 0;
         public test()
         {
+            //initialize the view
             InitializeComponent();
-            try
-            {
-                DirectoryDisplayLabel.Text = App.statesData[0].NameEn;
-                
-                for(short i = 0; i< App.statesData.Count; i++)
-                {
-                    statePicker.Items.Add(App.statesData[i].NameEn);
-                }
-            }
-            catch (Exception ex)
-            {
-                DirectoryDisplayLabel.Text = ex.Message;
-            }
-            //hi();
+            //set it so i can bind variables from this file to the view file
+            BindingContext = this;
+            //populate the elements
+            statePicker.ItemsSource = App.statesData;
+            delegatePicker.ItemsSource = App.statesData[selectedState].Delegations;
+
+        }
+
+        //update the delegates on state change
+        public int SelectedState { 
+            get { return selectedState; } 
+            set 
+            { 
+                selectedState = value;
+                delegatePicker.ItemsSource = App.statesData[selectedState].Delegations;
+                OnPropertyChanged(nameof(delegatePicker.ItemsSource));
+            } 
         }
 
         private async Task hi()
@@ -47,7 +52,6 @@ namespace TunisiaPrayer.Views
 
             deserializedProduct = JsonConvert.DeserializeObject<List<Rootobject>>(text);
 
-            DirectoryDisplayLabel.Text = $"it worked :D \n there are {deserializedProduct.Count}";
             //OnPropertyChanged(nameof(DirectoryDisplayLabel.Text));
         }
     }

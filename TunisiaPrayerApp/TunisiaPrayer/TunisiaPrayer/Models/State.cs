@@ -13,6 +13,11 @@ namespace TunisiaPrayer.Models
         public string NameAr { get; set; }
         public string NameEn { get; set; }
         public List<Delegation> Delegations { get; set; }
+
+        public override string ToString()
+        {
+            return this.NameEn;
+        }
     }
 
     public class Delegation
@@ -20,6 +25,10 @@ namespace TunisiaPrayer.Models
         public int Id { get; set; }
         public string NameAr { get; set; }
         public string NameEn { get; set; }
+        public override string ToString()
+        {
+            return this.NameEn;
+        }
     }
     public class StateService
     {
