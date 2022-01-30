@@ -8,6 +8,8 @@ namespace TunisiaPrayer
     public partial class App : Application
     {
         public static List<Rootobject> statesData { get; set; }
+        public static int selectedState { get; set; } = 0;
+        public static int selectedDelegate { get; set; } = 0;
         public App()
         {
             InitializeComponent();

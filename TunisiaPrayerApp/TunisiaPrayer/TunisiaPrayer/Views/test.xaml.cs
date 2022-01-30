@@ -15,7 +15,6 @@ namespace TunisiaPrayer.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class test : ContentPage
     {
-        public int selectedState { get; set; } = 0;
         public test()
         {
             //initialize the view
@@ -24,19 +23,28 @@ namespace TunisiaPrayer.Views
             BindingContext = this;
             //populate the elements
             statePicker.ItemsSource = App.statesData;
-            delegatePicker.ItemsSource = App.statesData[selectedState].Delegations;
+            delegatePicker.ItemsSource = App.statesData[App.selectedState].Delegations;
 
         }
 
         //update the delegates on state change
         public int SelectedState { 
-            get { return selectedState; } 
+            get { return App.selectedState; } 
             set 
             { 
-                selectedState = value;
-                delegatePicker.ItemsSource = App.statesData[selectedState].Delegations;
+                App.selectedState = value;
+                delegatePicker.ItemsSource = App.statesData[App.selectedState].Delegations;
                 OnPropertyChanged(nameof(delegatePicker.ItemsSource));
             } 
+        }
+
+        public int SelectedDelegate
+        {
+            get { return App.selectedDelegate; }
+            set
+            {
+                App.selectedDelegate = value;
+            }
         }
 
         private async Task hi()

@@ -1,14 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="TunisiaPrayer.Views.SettingsPage">
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:viewmodels="clr-namespace:TunisiaPrayer.ViewModels"
+             x:Class="TunisiaPrayer.Views.SettingsPage"
+             x:DataType="viewmodels:SettingsViewModel">
+    
+    <ContentPage.BindingContext>
+        <viewmodels:SettingsViewModel/>
+    </ContentPage.BindingContext>
     <ContentPage.Content>
-        <Grid>
-            <StackLayout>
+        <Grid ColumnDefinitions="*,2*,2*,*" RowDefinitions="5*,*,*,*,5*">
+            <Label Text="Select where you live" Grid.Column="1" Grid.Row="1" TextColor="Black"/>
 
-                <Picker Title="State" x:Name="statePicker"/>
-                <Picker Title="Delegate" x:Name="delegatePicker"/>
-            </StackLayout>
+            <Label Text="State" Grid.Column="1" Grid.Row="2" TextColor="Black"/>
+            <Picker Title="select State" x:Name="statePicker" Grid.Column="1" Grid.Row="3" BackgroundColor="Black" SelectedIndex="{Binding SelectedState}" ItemsSource="{Binding statePicker}"/>
+            <Label Text="Delegate" Grid.Column="2" Grid.Row="2" TextColor="Black"/>
+            <Picker Title="select Delegate" x:Name="delegatePicker" Grid.Column="2" Grid.Row="3" BackgroundColor="Black" SelectedIndex="{Binding SelectedDelegate}" ItemsSource="{Binding delegatePicker}"/>
         </Grid>
     </ContentPage.Content>
 </ContentPage>

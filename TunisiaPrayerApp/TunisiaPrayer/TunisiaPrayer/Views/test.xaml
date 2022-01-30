@@ -9,7 +9,7 @@
             <Label Text="State" Grid.Column="1" Grid.Row="2" TextColor="Black"/>
             <Picker Title="select State" x:Name="statePicker" Grid.Column="1" Grid.Row="3" BackgroundColor="Black" SelectedIndex="{Binding SelectedState}"/>
             <Label Text="Delegate" Grid.Column="2" Grid.Row="2" TextColor="Black"/>
-            <Picker Title="select Delegate" x:Name="delegatePicker" Grid.Column="2" Grid.Row="3" BackgroundColor="Black"/>
+            <Picker Title="select Delegate" x:Name="delegatePicker" Grid.Column="2" Grid.Row="3" BackgroundColor="Black" SelectedIndex="{Binding SelectedDelegate}"/>
         </Grid>
 
     </ContentPage.Content>

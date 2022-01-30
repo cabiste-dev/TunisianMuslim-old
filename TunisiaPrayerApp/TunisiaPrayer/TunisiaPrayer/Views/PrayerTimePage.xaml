@@ -15,7 +15,7 @@
 
             <StackLayout Grid.Row="0" Grid.Column="1">
 
-                <Label Text="Prayer time in bizerte" VerticalOptions="CenterAndExpand"
+                <Label Text="{Binding AreaSelected}" VerticalOptions="CenterAndExpand"
                 HorizontalOptions="CenterAndExpand" FontSize="Medium" TextColor="#FFFFFF"/>
 
                 <Label x:Name="TimeNow" VerticalOptions="CenterAndExpand"

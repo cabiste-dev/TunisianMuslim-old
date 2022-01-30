@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using TunisiaPrayer.Services;
+using Xamarin.Forms;
 
 namespace TunisiaPrayer.ViewModels
 {
@@ -20,16 +21,38 @@ namespace TunisiaPrayer.ViewModels
         public PrayerTimeViewModel()
         {
             RefreshTime = new AsyncCommand(SetTimes);
+            setArea();
             //BindingContext = this;
         }
-        public async Task SetTimes()
+
+        public string areaSelected { get; set; }
+
+        void setArea()
         {
-            prayersTime = await Prayers.GetTime(361, 634);
-            TimeNow = DateTime.Now.ToString("dd-MM-yyyy");
-            OnPropertyChanged(nameof(prayersTime));
+            AreaSelected = App.statesData[App.selectedState].NameEn + ", " + App.statesData[App.selectedState].Delegations[App.selectedDelegate].NameEn;
+        }
+        public string AreaSelected
+        {
+            get
+            {
+                return areaSelected;
+            }
+            set
+            {
+                areaSelected = value;
+                OnPropertyChanged(nameof(AreaSelected));
+            }
         }
 
+        public async Task SetTimes()
+        {
+            prayersTime = await Prayers.GetTime(App.statesData[App.selectedState].Id, App.statesData[App.selectedState].Delegations[App.selectedDelegate].Id);
+            TimeNow = DateTime.Now.ToString("dd-MM-yyyy");
+            setArea();
+            OnPropertyChanged(nameof(AreaSelected));
+            OnPropertyChanged(nameof(prayersTime));
 
+        }
 
         void OnRefresh()
         {
