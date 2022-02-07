@@ -29,7 +29,7 @@ namespace TunisiaPrayer.ViewModels
 
         void setArea()
         {
-            AreaSelected = App.statesData[App.selectedState].NameEn + ", " + App.statesData[App.selectedState].Delegations[App.selectedDelegate].NameEn;
+            AreaSelected = App.statesData[App.selectedStateIndex].NameEn + ", " + App.statesData[App.selectedStateIndex].Delegations[App.selectedDelegate].NameEn;
         }
         public string AreaSelected
         {
@@ -46,7 +46,7 @@ namespace TunisiaPrayer.ViewModels
 
         public async Task SetTimes()
         {
-            prayersTime = await Prayers.GetTime(App.statesData[App.selectedState].Id, App.statesData[App.selectedState].Delegations[App.selectedDelegate].Id);
+            prayersTime = await Prayers.GetTime(App.statesData[App.selectedStateIndex].Id, App.statesData[App.selectedStateIndex].Delegations[App.selectedDelegate].Id);
             TimeNow = DateTime.Now.ToString("dd-MM-yyyy");
             setArea();
             OnPropertyChanged(nameof(AreaSelected));

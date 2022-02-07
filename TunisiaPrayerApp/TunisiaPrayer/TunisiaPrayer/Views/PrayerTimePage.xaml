@@ -41,14 +41,28 @@
             </StackLayout>
             <!--Times-->
             <StackLayout Grid.Row="1" Grid.Column="2" >
-                <ListView ItemsSource="{Binding prayersTime}" />
+                <Label Text="{Binding prayersTime[0]}"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" FontSize="Large" TextColor="#FFFFFF" />
+                <Label Text="{Binding prayersTime[1]}"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" FontSize="Large" TextColor="#FFFFFF"/>
+                <Label Text="{Binding prayersTime[2]}"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" FontSize="Large" TextColor="#FFFFFF"/>
+                <Label Text="{Binding prayersTime[3]}"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" FontSize="Large" TextColor="#FFFFFF"/>
+                <Label Text="{Binding prayersTime[4]}"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" FontSize="Large" TextColor="#FFFFFF"/>
             </StackLayout>
 
             <!--control buttons-->
             <StackLayout Grid.Row="2" Grid.Column="1">
                 <Button Text="refresh" Command="{Binding RefreshTime}" />
-                <Picker Title="test" />
             </StackLayout>
         </Grid>
     </ContentPage.Content>
 </ContentPage>
+    

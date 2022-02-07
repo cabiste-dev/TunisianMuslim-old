@@ -16,20 +16,21 @@ namespace TunisiaPrayer.ViewModels
         {
             //populate the elements
             statePicker= App.statesData;
-            delegatePicker = App.statesData[App.selectedState].Delegations;
+           
+            delegatePicker = App.statesData[App.selectedStateIndex].Delegations;
 
         }
 
 
 
         //update the delegates on state change
-        public int SelectedState
+        public int SelectedStateIndex
         {
-            get { return App.selectedState; }
+            get { return App.selectedStateIndex; }
             set
             {
-                App.selectedState = value;
-                delegatePicker = App.statesData[App.selectedState].Delegations;
+                App.selectedStateIndex = value;
+                delegatePicker = App.statesData[App.selectedStateIndex].Delegations;
                 OnPropertyChanged(nameof(delegatePicker));
             }
         }

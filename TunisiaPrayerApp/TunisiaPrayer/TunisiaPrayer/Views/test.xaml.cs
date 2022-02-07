@@ -23,17 +23,17 @@ namespace TunisiaPrayer.Views
             BindingContext = this;
             //populate the elements
             statePicker.ItemsSource = App.statesData;
-            delegatePicker.ItemsSource = App.statesData[App.selectedState].Delegations;
+            delegatePicker.ItemsSource = App.statesData[App.selectedStateIndex].Delegations;
 
         }
 
         //update the delegates on state change
         public int SelectedState { 
-            get { return App.selectedState; } 
+            get { return App.selectedStateIndex; } 
             set 
             { 
-                App.selectedState = value;
-                delegatePicker.ItemsSource = App.statesData[App.selectedState].Delegations;
+                App.selectedStateIndex = value;
+                delegatePicker.ItemsSource = App.statesData[App.selectedStateIndex].Delegations;
                 OnPropertyChanged(nameof(delegatePicker.ItemsSource));
             } 
         }
