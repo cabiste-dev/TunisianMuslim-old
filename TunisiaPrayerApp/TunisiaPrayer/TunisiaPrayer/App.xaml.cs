@@ -2,14 +2,16 @@
 using TunisiaPrayer.Models;
 using TunisiaPrayer.Services;
 using Xamarin.Forms;
+using Xamarin.Essentials;
+using System;
 
 namespace TunisiaPrayer
 {
     public partial class App : Application
     {
         public static List<Rootobject> statesData { get; set; }
-        public static int selectedStateIndex { get; set; } = 0;
-        public static int selectedDelegate { get; set; } = 0;
+        public static byte selectedStateIndex { get; set; }
+        public static byte selectedDelegate { get; set; }
         public App()
         {
             InitializeComponent();
@@ -22,7 +24,7 @@ namespace TunisiaPrayer
         {
             StateService something = new StateService();
             statesData = await something.LoadData();
-
+            LoadPrefrences();
         }
 
         protected override void OnSleep()
@@ -31,6 +33,12 @@ namespace TunisiaPrayer
 
         protected override void OnResume()
         {
+        }
+
+        void LoadPrefrences()
+        {
+            selectedStateIndex = Convert.ToByte(Preferences.Get("selectedStateIndex",0));
+            selectedDelegate = Convert.ToByte(Preferences.Get("selectedDelegate", 0));
         }
     }
 }

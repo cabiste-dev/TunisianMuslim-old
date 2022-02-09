@@ -19,48 +19,9 @@ namespace TunisiaPrayer.Views
         {
             //initialize the view
             InitializeComponent();
-            //set it so i can bind variables from this file to the view file
-            BindingContext = this;
-            //populate the elements
-            statePicker.ItemsSource = App.statesData;
-            delegatePicker.ItemsSource = App.statesData[App.selectedStateIndex].Delegations;
 
         }
 
-        //update the delegates on state change
-        public int SelectedState { 
-            get { return App.selectedStateIndex; } 
-            set 
-            { 
-                App.selectedStateIndex = value;
-                delegatePicker.ItemsSource = App.statesData[App.selectedStateIndex].Delegations;
-                OnPropertyChanged(nameof(delegatePicker.ItemsSource));
-            } 
-        }
-
-        public int SelectedDelegate
-        {
-            get { return App.selectedDelegate; }
-            set
-            {
-                App.selectedDelegate = value;
-            }
-        }
-
-        private async Task hi()
-        {
-            List<Rootobject> deserializedProduct = new List<Rootobject>();
-            var assembly = IntrospectionExtensions.GetTypeInfo(typeof(test)).Assembly;
-            Stream stream = assembly.GetManifestResourceStream($"TunisiaPrayer.states.json");
-            string text = "";
-            using (var reader = new StreamReader(stream))
-            {
-                text = await reader.ReadToEndAsync();
-            }
-
-            deserializedProduct = JsonConvert.DeserializeObject<List<Rootobject>>(text);
-
-            //OnPropertyChanged(nameof(DirectoryDisplayLabel.Text));
-        }
+        
     }
 }
