@@ -10,15 +10,16 @@ namespace TunisiaPrayer.ViewModels
     public class SettingsViewModel : BaseViewModel
     {
 
-        public List<Rootobject> statePicker { get; set; }
-        public List<Delegation> delegatePicker { get; set; }
+        public List<Rootobject> states { get; set; }
+        public List<Delegation> delegates { get; set; }
+        public string selectedState { get; set; } = App.statesData[App.selectedStateIndex].NameEn;
+        public string selectedDelegate { get; set; } = App.statesData[App.selectedStateIndex].Delegations[App.selectedDelegateIndex].NameEn;
 
         public SettingsViewModel()
         {
             //populate the elements
-            statePicker= App.statesData;
-           
-            delegatePicker = App.statesData[App.selectedStateIndex].Delegations;
+            states= App.statesData;
+            delegates = App.statesData[App.selectedStateIndex].Delegations;
         }
 
 
@@ -30,20 +31,24 @@ namespace TunisiaPrayer.ViewModels
             set
             {
                 App.selectedStateIndex = value;
-                delegatePicker = App.statesData[App.selectedStateIndex].Delegations;
-                OnPropertyChanged(nameof(delegatePicker));
+                delegates = App.statesData[value].Delegations;
+                selectedDelegate = App.statesData[value].Delegations[0].NameEn;
+                OnPropertyChanged(nameof(delegates));
+                OnPropertyChanged(nameof(selectedDelegate));
+                selectedState = App.statesData[value].NameEn;
                 Preferences.Set("selectedStateIndex", value);
             }
         }
 
-        public byte SelectedDelegate
+        public byte SelectedDelegateIndex
         {
-            get { return App.selectedDelegate; }
+            get { return App.selectedDelegateIndex; }
             set
             {
-                App.selectedDelegate = value;
-                
+                App.selectedDelegateIndex = value;
+                selectedDelegate = App.statesData[App.selectedStateIndex].Delegations[value].NameEn;
                 Preferences.Set("selectedDelegate", value);
+
             }
         }
     }

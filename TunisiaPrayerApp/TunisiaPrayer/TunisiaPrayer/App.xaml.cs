@@ -11,7 +11,7 @@ namespace TunisiaPrayer
     {
         public static List<Rootobject> statesData { get; set; }
         public static byte selectedStateIndex { get; set; }
-        public static byte selectedDelegate { get; set; }
+        public static byte selectedDelegateIndex { get; set; }
         public App()
         {
             InitializeComponent();
@@ -38,7 +38,7 @@ namespace TunisiaPrayer
         void LoadPrefrences()
         {
             selectedStateIndex = Convert.ToByte(Preferences.Get("selectedStateIndex",0));
-            selectedDelegate = Convert.ToByte(Preferences.Get("selectedDelegate", 0));
+            selectedDelegateIndex = Convert.ToByte(Preferences.Get("selectedDelegate", 0));
         }
     }
 }
