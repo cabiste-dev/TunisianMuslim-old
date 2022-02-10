@@ -21,7 +21,7 @@ namespace TunisiaPrayer.ViewModels
         public PrayerTimeViewModel()
         {
             RefreshTime = new AsyncCommand(SetTimes);
-            setArea();
+            //setArea();
             //BindingContext = this;
         }
 

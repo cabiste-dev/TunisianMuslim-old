@@ -4,6 +4,7 @@ using TunisiaPrayer.Services;
 using Xamarin.Forms;
 using Xamarin.Essentials;
 using System;
+using System.Threading.Tasks;
 
 namespace TunisiaPrayer
 {
@@ -15,8 +16,6 @@ namespace TunisiaPrayer
         public App()
         {
             InitializeComponent();
-            
-            DependencyService.Register<MockDataStore>();
             MainPage = new AppShell();
         }
 
@@ -24,7 +23,7 @@ namespace TunisiaPrayer
         {
             StateService something = new StateService();
             statesData = await something.LoadData();
-            LoadPrefrences();
+            await LoadPrefrences();
         }
 
         protected override void OnSleep()
@@ -35,7 +34,7 @@ namespace TunisiaPrayer
         {
         }
 
-        void LoadPrefrences()
+        async Task LoadPrefrences()
         {
             selectedStateIndex = Convert.ToByte(Preferences.Get("selectedStateIndex",0));
             selectedDelegateIndex = Convert.ToByte(Preferences.Get("selectedDelegate", 0));
