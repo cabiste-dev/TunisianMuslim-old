@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:viewmodels="clr-namespace:TunisiaPrayer.ViewModels"
              x:Class="TunisiaPrayer.Views.PrayerTimePage"
              x:DataType="viewmodels:PrayerTimeViewModel"
-             BackgroundColor="Black">
+             BackgroundColor="#272c34">
 
     <ContentPage.BindingContext>
         <viewmodels:PrayerTimeViewModel/>

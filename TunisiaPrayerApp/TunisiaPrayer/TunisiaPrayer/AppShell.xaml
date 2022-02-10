@@ -3,7 +3,8 @@
        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
        xmlns:local="clr-namespace:TunisiaPrayer.Views"
        Title="TunisiaPrayer"
-       x:Class="TunisiaPrayer.AppShell">
+       x:Class="TunisiaPrayer.AppShell"
+       FlyoutBackgroundColor="#1a1927">
 
     <!--
         The overall app visual hierarchy is defined here, along with navigation.
