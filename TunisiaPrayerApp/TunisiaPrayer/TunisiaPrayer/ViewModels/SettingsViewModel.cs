@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Xamarin.Forms;
+﻿using System.Collections.Generic;
 using TunisiaPrayer.Models;
 using Xamarin.Essentials;
 
@@ -18,7 +15,7 @@ namespace TunisiaPrayer.ViewModels
         public SettingsViewModel()
         {
             //populate the elements
-            states= App.statesData;
+            states = App.statesData;
             delegates = App.statesData[App.selectedStateIndex].Delegations;
         }
 

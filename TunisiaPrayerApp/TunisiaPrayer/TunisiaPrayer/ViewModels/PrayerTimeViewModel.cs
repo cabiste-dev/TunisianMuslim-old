@@ -2,11 +2,9 @@
 using MvvmHelpers.Commands;
 using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using TunisiaPrayer.Services;
-using Xamarin.Forms;
 
 namespace TunisiaPrayer.ViewModels
 {
@@ -15,14 +13,12 @@ namespace TunisiaPrayer.ViewModels
     {
         public string TimeNow { get; set; }
         public List<string> prayersTime { get; set; }
-        //public StackLayout stackLayout { get; set; }
         public ICommand RefreshTime { get; }
 
         public PrayerTimeViewModel()
         {
             RefreshTime = new AsyncCommand(SetTimes);
             //setArea();
-            //BindingContext = this;
         }
 
         public string areaSelected { get; set; }
@@ -51,7 +47,6 @@ namespace TunisiaPrayer.ViewModels
             setArea();
             OnPropertyChanged(nameof(AreaSelected));
             OnPropertyChanged(nameof(prayersTime));
-
         }
     }
 
