@@ -8,7 +8,7 @@
     <ContentPage.BindingContext>
         <viewmodels:PrayerTimeViewModel/>
     </ContentPage.BindingContext>
-    
+
     <ContentPage.Content>
         <Grid RowDefinitions="2*,6*,2*" ColumnDefinitions="*,4*,4*,*">
 

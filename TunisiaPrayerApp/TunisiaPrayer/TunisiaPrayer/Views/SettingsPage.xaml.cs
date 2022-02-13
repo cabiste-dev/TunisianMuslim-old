@@ -13,7 +13,6 @@ namespace TunisiaPrayer.Views
         public SettingsPage()
         {
             InitializeComponent();
-
         }
     }
 }

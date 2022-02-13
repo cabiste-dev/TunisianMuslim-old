@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -15,5 +14,10 @@ namespace TunisiaPrayer.Views
         {
             InitializeComponent();
         }
+
+        //public async void Erorr()
+        //{
+        //    await this.DisplayToastAsync("network error :(");
+        //}
     }
 }
