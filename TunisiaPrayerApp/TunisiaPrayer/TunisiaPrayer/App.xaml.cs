@@ -36,7 +36,7 @@ namespace TunisiaPrayer
 
         async Task LoadPrefrences()
         {
-            selectedStateIndex = Convert.ToByte(Preferences.Get("selectedStateIndex",0));
+            selectedStateIndex = Convert.ToByte(Preferences.Get("selectedStateIndex", 0));
             selectedDelegateIndex = Convert.ToByte(Preferences.Get("selectedDelegate", 0));
         }
     }

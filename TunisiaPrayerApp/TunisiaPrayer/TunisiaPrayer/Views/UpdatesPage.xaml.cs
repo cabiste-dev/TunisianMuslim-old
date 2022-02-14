@@ -8,6 +8,8 @@ using Xamarin.Forms.Xaml;
 using Xamarin.Essentials;
 using System.Net;
 using Xamarin.Forms.PlatformConfiguration;
+using System.IO;
+using TunisiaPrayer.Services;
 
 namespace TunisiaPrayer.Views
 {
@@ -16,10 +18,12 @@ namespace TunisiaPrayer.Views
     {
         public bool UpdateAvailable { get; set; } = false;
         public string IsDownloading { get; set; }
+        IPathService pathService;
         public UpdatesPage()
         {
             InitializeComponent();
             BindingContext = this;
+            pathService = DependencyService.Get<IPathService>();
         }
 
         private async void RefreshButton_Clicked(object sender, EventArgs e)
@@ -48,8 +52,9 @@ namespace TunisiaPrayer.Views
             OnPropertyChanged(nameof(IsDownloading));
             Uri url = new Uri("https://github.com/cabiste69/TunisiaPrayer/releases/download/1.0.0/TunisiaPrayer-1.0.apk");
             WebClient myWebClient = new WebClient();
-            string savePath = FileSystem.CacheDirectory;
-            myWebClient.DownloadFileAsync(url, $"{savePath}/test.apk");
+            //string savePath = FileSystem.CacheDirectory;
+            string x = pathService.PublicExternalFolder;
+            myWebClient.DownloadFileAsync(url, x);
 
         }
     }
