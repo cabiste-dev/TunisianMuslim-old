@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TunisiaPrayer.Views.UpdatesPage">
+
+    <ContentPage.Content>
+        <Grid RowDefinitions="*,2*,10*,2*,*" ColumnDefinitions="*,4*,*">
+            <Button Text="refresh" Clicked="RefreshButton_Clicked" Grid.Row="1" Grid.Column="1"/>
+            <Label x:Name="rel" Text="" Grid.Row="2" Grid.Column="1"/>
+            <ScrollView Grid.Row="2">
+
+                <Label Text="{Binding IsDownloading}" Grid.Row="2" Grid.Column="1"/>
+
+            </ScrollView>
+            <Button Text="Update" IsEnabled="{Binding UpdateAvailable}" Grid.Row="3" Grid.Column="1" Clicked="Button_Clicked"/>
+            <!--<Label x:Name="versionDiff" Grid.Row="3" Grid.Column="1"/>-->
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
