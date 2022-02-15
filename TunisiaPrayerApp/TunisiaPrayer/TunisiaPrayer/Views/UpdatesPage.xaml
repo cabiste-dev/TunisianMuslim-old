@@ -6,10 +6,10 @@
     <ContentPage.Content>
         <Grid RowDefinitions="*,2*,10*,2*,*" ColumnDefinitions="*,4*,*">
             <Button Text="refresh" Clicked="RefreshButton_Clicked" Grid.Row="1" Grid.Column="1"/>
-            <Label x:Name="rel" Text="" Grid.Row="2" Grid.Column="1"/>
-            <ScrollView Grid.Row="2">
+            <Label x:Name="rel" Text="" Grid.Row="2" Grid.Column="1" TextColor="Black"/>
+            <ScrollView Grid.Row="2" Grid.Column="1">
 
-                <Label Text="{Binding IsDownloading}" Grid.Row="2" Grid.Column="1"/>
+                <Label Text="{Binding IsDownloading}" Grid.Row="2" Grid.Column="1" TextColor="Black"/>
 
             </ScrollView>
             <Button Text="Update" IsEnabled="{Binding UpdateAvailable}" Grid.Row="3" Grid.Column="1" Clicked="Button_Clicked"/>

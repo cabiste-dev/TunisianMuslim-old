@@ -46,16 +46,39 @@ namespace TunisiaPrayer.Views
             }
         }
 
-        private void Button_Clicked(object sender, EventArgs e)
+        private async void Button_Clicked(object sender, EventArgs e)
         {
+            if (await permissionDenied())
+            {
+                return;
+            }
+
+            rel.Text += "\n" + pathService.PublicExternalFolder;
             IsDownloading = "downloading";
             OnPropertyChanged(nameof(IsDownloading));
             Uri url = new Uri("https://github.com/cabiste69/TunisiaPrayer/releases/download/1.0.0/TunisiaPrayer-1.0.apk");
             WebClient myWebClient = new WebClient();
             //string savePath = FileSystem.CacheDirectory;
             string x = pathService.PublicExternalFolder;
-            myWebClient.DownloadFileAsync(url, x);
+            myWebClient.DownloadFileAsync(url, x + "/test.apk");
+            IsDownloading = "completed downloading";
+            OnPropertyChanged(nameof(IsDownloading));
+        }
 
+        private async Task<bool> permissionDenied()
+        {
+            PermissionStatus permissionWrite = await Permissions.CheckStatusAsync<Permissions.StorageWrite>();
+            PermissionStatus permissionRead = await Permissions.CheckStatusAsync<Permissions.StorageRead>();
+            if (permissionWrite != PermissionStatus.Granted)
+            {
+                permissionWrite = await Permissions.RequestAsync<Permissions.StorageWrite>();
+            }
+            if (permissionRead != PermissionStatus.Granted)
+            {
+                permissionRead = await Permissions.RequestAsync<Permissions.StorageRead>();
+            }
+
+            return permissionWrite != PermissionStatus.Granted && permissionRead != PermissionStatus.Granted;
         }
     }
 }

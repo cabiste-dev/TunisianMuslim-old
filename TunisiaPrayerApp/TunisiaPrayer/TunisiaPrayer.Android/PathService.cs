@@ -17,29 +17,30 @@ namespace TunisiaPrayer.Droid
 {
     public class PathService : IPathService
     {
-        private Context context { get; set; }
-        public string InternalFolder
-        {
-            get
-            {
-                return Android.App.Application.Context.FilesDir.AbsolutePath;
-            }
-        }
-
+        private Context context = Android.App.Application.Context;
         public string PublicExternalFolder
         {
             get
             {
-                return Android.OS.Environment.GetExternalStoragePublicDirectory(Android.OS.Environment.DirectoryDownloads).AbsolutePath;
+                //return context.GetExternalFilesDir(Android.OS.Environment.DirectoryDownloads).ToPath().ToString();
+                return Android.OS.Environment.GetExternalStoragePublicDirectory(Android.OS.Environment.DirectoryDownloads).ToString();
             }
         }
 
-        public string PrivateExternalFolder
-        {
-            get
-            {
-                return Android.App.Application.Context.GetExternalFilesDir(null).AbsolutePath;
-            }
-        }
+        //public string PrivateExternalFolder
+        //{
+        //    get
+        //    {
+        //        return Android.App.Application.Context.GetExternalFilesDir(null).AbsolutePath;
+        //    }
+        //}
+        //public string InternalFolder
+        //{
+        //    get
+        //    {
+        //        return Android.App.Application.Context.FilesDir.AbsolutePath;
+        //    }
+        //}
+
     }
 }
