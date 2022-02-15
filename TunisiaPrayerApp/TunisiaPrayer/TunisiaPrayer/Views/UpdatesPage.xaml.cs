@@ -59,10 +59,17 @@ namespace TunisiaPrayer.Views
             Uri url = new Uri("https://github.com/cabiste69/TunisiaPrayer/releases/download/1.0.0/TunisiaPrayer-1.0.apk");
             WebClient myWebClient = new WebClient();
             //string savePath = FileSystem.CacheDirectory;
-            string x = pathService.PublicExternalFolder;
-            myWebClient.DownloadFileAsync(url, x + "/test.apk");
+            string fileUri = pathService.PublicExternalFolder + "/test.apk";
+            myWebClient.DownloadFileAsync(url, fileUri);
             IsDownloading = "completed downloading";
             OnPropertyChanged(nameof(IsDownloading));
+
+            InstallUpdate(fileUri);
+        }
+
+        private void InstallUpdate(string fileUri)
+        {
+            pathService.install(fileUri);
         }
 
         private async Task<bool> permissionDenied()
