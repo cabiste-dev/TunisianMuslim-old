@@ -9,7 +9,7 @@ namespace TunisiaPrayer.Services
     {
         //string InternalFolder { get; }
         string PublicExternalFolder { get; }
-        void install(string filePath);
+        //void install(string filePath);
         //string PrivateExternalFolder { get; }
     }
 }

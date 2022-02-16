@@ -31,27 +31,27 @@ namespace TunisiaPrayer.Droid
             }
         }
 
-        public async void install(string filePath)
-        {
+        //public async void install(string filePath)
+        //{
 
-            Java.IO.File file = new Java.IO.File(filePath);
-            if (Build.VERSION.SdkInt >= BuildVersionCodes.N)
-            {
-                Uri apkUri = FileProvider.GetUriForFile(context, context.ApplicationContext.PackageName + ".provider", file);
-                Intent intentS = new Intent(Intent.ActionInstallPackage);
-                intentS.SetData(apkUri);
-                intentS.SetFlags(ActivityFlags.GrantReadUriPermission);
-                context.StartActivity(intentS);
-            }
-            else
-            {
-                Uri apkUri = Uri.FromFile(file);
-                Intent intentS = new Intent(Intent.ActionView);
-                intentS.SetDataAndType(apkUri, "application/vnd.android.package-archive");
-                intentS.SetFlags(ActivityFlags.NewTask);
-                context.StartActivity(intentS);
-            }
-        }
+        //    Java.IO.File file = new Java.IO.File(filePath);
+        //    if (Build.VERSION.SdkInt >= BuildVersionCodes.N)
+        //    {
+        //        Uri apkUri = FileProvider.GetUriForFile(context, context.ApplicationContext.PackageName + ".provider", file);
+        //        Intent intentS = new Intent(Intent.ActionInstallPackage);
+        //        intentS.SetData(apkUri);
+        //        intentS.SetFlags(ActivityFlags.GrantReadUriPermission);
+        //        context.StartActivity(intentS);
+        //    }
+        //    else
+        //    {
+        //        Uri apkUri = Uri.FromFile(file);
+        //        Intent intentS = new Intent(Intent.ActionView);
+        //        intentS.SetDataAndType(apkUri, "application/vnd.android.package-archive");
+        //        intentS.SetFlags(ActivityFlags.NewTask);
+        //        context.StartActivity(intentS);
+        //    }
+        //}
 
 
         //public static Android.Net.Uri GetPathUri(Context context, string filePath)
