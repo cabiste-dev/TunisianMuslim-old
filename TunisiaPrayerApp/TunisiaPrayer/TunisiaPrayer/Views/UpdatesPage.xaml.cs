@@ -27,6 +27,7 @@ namespace TunisiaPrayer.Views
             InitializeComponent();
             BindingContext = this;
             pathService = DependencyService.Get<IPathService>();
+            packageInstaller = DependencyService.Get<IPackageInstaller>();
         }
 
         private async void RefreshButton_Clicked(object sender, EventArgs e)

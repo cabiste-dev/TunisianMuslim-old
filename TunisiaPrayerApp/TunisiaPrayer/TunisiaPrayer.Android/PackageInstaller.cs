@@ -13,7 +13,7 @@ namespace TunisiaPrayer.Droid
     using Xamarin.Essentials;
     using Xamarin.Forms;
 
-    
+
     [Activity(Label = "InstallApkSessionApi", LaunchMode = LaunchMode.SingleTop)]
     public class InstallApkSessionApi : Activity, IPackageInstaller
     {
@@ -31,7 +31,7 @@ namespace TunisiaPrayer.Droid
             //        StartActivityForResult(unKnownSourceIntent, Constant.UNKNOWN_RESOURCE_INTENT_REQUEST_CODE);
             //    }
             //}
-            
+
             Install(apkPath);
         }
 
@@ -40,7 +40,7 @@ namespace TunisiaPrayer.Droid
             PackageInstaller.Session session = null;
             try
             {
-                PackageInstaller packageInstaller = this.PackageManager.PackageInstaller;
+                PackageInstaller packageInstaller = Android.App.Application.Context.PackageManager.PackageInstaller;
                 PackageInstaller.SessionParams @params = new PackageInstaller.SessionParams(
                         PackageInstallMode.FullInstall);
                 int sessionId = packageInstaller.CreateSession(@params);
@@ -79,7 +79,7 @@ namespace TunisiaPrayer.Droid
             // It's recommended to pass the file size to openWrite(). Otherwise installation may fail
             // if the disk is almost full.
             using Stream packageInSession = session.OpenWrite("package", 0, apkSize);
-            using Stream @is = this.Assets.Open(assetName);
+            using Stream @is = Android.App.Application.Context.Assets.Open(assetName);
             byte[] buffer = new byte[16384];
             int n;
             while ((n = @is.Read(buffer)) > 0)
