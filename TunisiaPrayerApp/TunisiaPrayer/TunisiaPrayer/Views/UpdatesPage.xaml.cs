@@ -10,6 +10,7 @@ using System.Net;
 using Xamarin.Forms.PlatformConfiguration;
 using System.IO;
 using TunisiaPrayer.Services;
+using System.ComponentModel;
 
 namespace TunisiaPrayer.Views
 {
@@ -19,6 +20,8 @@ namespace TunisiaPrayer.Views
         public bool UpdateAvailable { get; set; } = false;
         public string IsDownloading { get; set; }
         IPathService pathService;
+        IPackageInstaller packageInstaller;
+        private string fileUri;
         public UpdatesPage()
         {
             InitializeComponent();
@@ -57,19 +60,20 @@ namespace TunisiaPrayer.Views
             IsDownloading = "downloading";
             OnPropertyChanged(nameof(IsDownloading));
             Uri url = new Uri("https://github.com/cabiste69/TunisiaPrayer/releases/download/1.0.0/TunisiaPrayer-1.0.apk");
+
+            GetFileUri();
+
             WebClient myWebClient = new WebClient();
-            //string savePath = FileSystem.CacheDirectory;
-            string fileUri = pathService.PublicExternalFolder + "/test.apk";
             myWebClient.DownloadFileAsync(url, fileUri);
             IsDownloading = "completed downloading";
             OnPropertyChanged(nameof(IsDownloading));
-
-            InstallUpdate(fileUri);
+            myWebClient.DownloadFileCompleted += new AsyncCompletedEventHandler(InstallUpdate);
         }
 
-        private void InstallUpdate(string fileUri)
+        private void InstallUpdate(object sender, AsyncCompletedEventArgs e)
         {
-            pathService.install(fileUri);
+
+            packageInstaller.OnCreate(fileUri);
         }
 
         private async Task<bool> permissionDenied()
@@ -86,6 +90,12 @@ namespace TunisiaPrayer.Views
             }
 
             return permissionWrite != PermissionStatus.Granted && permissionRead != PermissionStatus.Granted;
+
         }
+        private void GetFileUri()
+        {
+            fileUri = pathService.PublicExternalFolder + "/test.apk";
+        }
+
     }
 }

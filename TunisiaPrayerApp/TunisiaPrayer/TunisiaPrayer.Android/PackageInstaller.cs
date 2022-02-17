@@ -1,4 +1,5 @@
-﻿namespace TunisiaPrayer.Droid
+﻿[assembly: Xamarin.Forms.Dependency(typeof(TunisiaPrayer.Droid.InstallApkSessionApi))]
+namespace TunisiaPrayer.Droid
 {
     using System;
     using System.IO;
@@ -8,24 +9,33 @@
     using Android.Content.PM;
     using Android.OS;
     using Android.Widget;
+    using TunisiaPrayer.Services;
+    using Xamarin.Essentials;
+    using Xamarin.Forms;
 
+    
     [Activity(Label = "InstallApkSessionApi", LaunchMode = LaunchMode.SingleTop)]
-    public class InstallApkSessionApi : Activity
+    public class InstallApkSessionApi : Activity, IPackageInstaller
     {
-        private static readonly string PACKAGE_INSTALLED_ACTION =
-                "com.example.android.apis.content.SESSION_API_PACKAGE_INSTALLED";
+        private static readonly string PACKAGE_INSTALLED_ACTION = $"{AppInfo.PackageName}.apis.content.SESSION_API_PACKAGE_INSTALLED";
 
-        protected override void OnCreate(Bundle savedInstanceState)
+        public void OnCreate(string apkPath)
         {
-            base.OnCreate(savedInstanceState);
-            this.SetContentView(Resource.Layout.install_apk_session_api);
+            //Intent unKnownSourceIntent = new Intent(Android.Provider.Settings.ActionManageUnknownAppSources).SetData((Android.Net.Uri)string.Format("package:%s", AppInfo.PackageName));
 
-            // Watch for button clicks.
-            Button button = this.FindViewById<Button>(Resource.Id.install);
-            button.Click += this.Button_Click;
+            //if (Build.VERSION.SdkInt >= BuildVersionCodes.O)
+            //{
+
+            //    if (!Activity.getPackageManager().canRequestPackageInstalls())
+            //    {
+            //        StartActivityForResult(unKnownSourceIntent, Constant.UNKNOWN_RESOURCE_INTENT_REQUEST_CODE);
+            //    }
+            //}
+            
+            Install(apkPath);
         }
 
-        private void Button_Click(object sender, EventArgs e)
+        private void Install(string apkPath)
         {
             PackageInstaller.Session session = null;
             try
@@ -35,7 +45,8 @@
                         PackageInstallMode.FullInstall);
                 int sessionId = packageInstaller.CreateSession(@params);
                 session = packageInstaller.OpenSession(sessionId);
-                this.AddApkToInstallSession("HelloActivity.apk", session);
+                long apkSize = new FileInfo(apkPath).Length;
+                this.AddApkToInstallSession(apkPath, session, apkSize);
 
                 // Create an install status receiver.
                 Context context = this;
@@ -63,11 +74,11 @@
         }
 
 
-        private void AddApkToInstallSession(string assetName, PackageInstaller.Session session)
+        private void AddApkToInstallSession(string assetName, PackageInstaller.Session session, long apkSize)
         {
             // It's recommended to pass the file size to openWrite(). Otherwise installation may fail
             // if the disk is almost full.
-            using Stream packageInSession = session.OpenWrite("package", 0, -1);
+            using Stream packageInSession = session.OpenWrite("package", 0, apkSize);
             using Stream @is = this.Assets.Open(assetName);
             byte[] buffer = new byte[16384];
             int n;

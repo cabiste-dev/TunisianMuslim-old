@@ -7,6 +7,6 @@ namespace TunisiaPrayer.Services
 {
     public interface IPackageInstaller
     {
-        void Install(string apkUri);
+        void OnCreate(string apkPath);
     }
 }
