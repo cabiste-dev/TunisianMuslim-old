@@ -11,7 +11,6 @@ namespace TunisiaPrayer.Droid
     using Android.Widget;
     using TunisiaPrayer.Services;
     using Xamarin.Essentials;
-    using Xamarin.Forms;
 
 
     [Activity(Label = "InstallApkSessionApi", LaunchMode = LaunchMode.SingleTop)]
@@ -21,22 +20,29 @@ namespace TunisiaPrayer.Droid
 
         public void OnCreate(string apkPath)
         {
-            Intent unKnownSourceIntent = new Intent(Android.Provider.Settings.ActionManageUnknownAppSources).SetData((Android.Net.Uri)string.Format("package:%s", AppInfo.PackageName));
+            //Intent unKnownSourceIntent = new Intent(Android.Provider.Settings.ActionManageUnknownAppSources).SetData((Android.Net.Uri)string.Format("package:%s", AppInfo.PackageName));
 
+            //this only works for android API below 26
+            Android.Net.Uri uri = Android.Net.Uri.FromFile(new Java.IO.File(apkPath));
+
+            //that's why i need to check here for the android version
             if (Build.VERSION.SdkInt >= BuildVersionCodes.O)
             {
                 //original condition -> !Activity.GetPackageManager().canRequestPackageInstalls()
                 if (!Android.App.Application.Context.PackageManager.CanRequestPackageInstalls())
                 {
                     //original parameters -> unKnownSourceIntent, Constant.UNKNOWN_RESOURCE_INTENT_REQUEST_CODE
-                    StartActivityForResult(unKnownSourceIntent, 15);
+                    //StartActivityForResult(unKnownSourceIntent, Permissions.);
+                    Android.
                 }
+                //this is the format for android API 26 or above
+                uri = FileProvider.GetUriForFile(Application.Context, AppInfo.PackageName + ".provider", new Java.IO.File(apkPath));
             }
-            var bundle = PackageManager.GetApplicationInfo(PackageName, Android.Content.PM.PackageInfoFlags.Providers).MetaData;
-            Android.Net.Uri uri = Android.Net.Uri.FromFile(new Java.IO.File(apkPath));
+
+
             Intent promptInstall = new Intent(Intent.ActionView).SetDataAndType(uri, "application/vnd.android.package-archive");
             promptInstall.SetFlags(ActivityFlags.NewTask);
-            Android.App.Application.Context.StartActivity(promptInstall);
+            Application.Context.StartActivity(promptInstall);
 
 
             //Install(apkPath);

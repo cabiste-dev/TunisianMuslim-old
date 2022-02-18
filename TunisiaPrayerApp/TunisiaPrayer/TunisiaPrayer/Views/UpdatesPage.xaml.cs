@@ -74,7 +74,7 @@ namespace TunisiaPrayer.Views
 
         private void InstallUpdate(object sender, AsyncCompletedEventArgs e)
         {
-
+            
             packageInstaller.OnCreate(fileUri);
         }
 
