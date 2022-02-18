@@ -64,11 +64,12 @@ namespace TunisiaPrayer.Views
 
             GetFileUri();
 
-            WebClient myWebClient = new WebClient();
-            myWebClient.DownloadFileAsync(url, fileUri);
+            //WebClient myWebClient = new WebClient();
+            //myWebClient.DownloadFileAsync(url, fileUri);
             IsDownloading = "completed downloading";
             OnPropertyChanged(nameof(IsDownloading));
-            myWebClient.DownloadFileCompleted += new AsyncCompletedEventHandler(InstallUpdate);
+            //myWebClient.DownloadFileCompleted += new AsyncCompletedEventHandler(InstallUpdate);
+            InstallUpdate(null, null);
         }
 
         private void InstallUpdate(object sender, AsyncCompletedEventArgs e)
