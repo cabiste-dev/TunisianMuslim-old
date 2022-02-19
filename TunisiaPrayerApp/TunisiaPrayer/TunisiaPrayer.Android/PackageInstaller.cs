@@ -33,7 +33,8 @@ namespace TunisiaPrayer.Droid
                 {
                     //original parameters -> unKnownSourceIntent, Constant.UNKNOWN_RESOURCE_INTENT_REQUEST_CODE
                     //StartActivityForResult(unKnownSourceIntent, Permissions.);
-                    Android.
+                    Application.Context.StartActivity(new Intent(Android.Provider.Settings.ActionManageUnknownAppSources, Android.Net.Uri.Parse("package:" + Android.App.Application.Context.PackageName)).SetFlags(ActivityFlags.NewTask));
+
                 }
                 //this is the format for android API 26 or above
                 uri = FileProvider.GetUriForFile(Application.Context, AppInfo.PackageName + ".provider", new Java.IO.File(apkPath));
@@ -41,7 +42,7 @@ namespace TunisiaPrayer.Droid
 
 
             Intent promptInstall = new Intent(Intent.ActionView).SetDataAndType(uri, "application/vnd.android.package-archive");
-            promptInstall.SetFlags(ActivityFlags.NewTask);
+            promptInstall.AddFlags(ActivityFlags.NewTask);
             Application.Context.StartActivity(promptInstall);
 
 

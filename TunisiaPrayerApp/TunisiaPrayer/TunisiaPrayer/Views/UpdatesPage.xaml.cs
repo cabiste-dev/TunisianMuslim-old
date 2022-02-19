@@ -57,24 +57,24 @@ namespace TunisiaPrayer.Views
                 return;
             }
 
-            rel.Text += "\n" + pathService.PublicExternalFolder;
+            //rel.Text += "\n" + pathService.PublicExternalFolder;
             IsDownloading = "downloading";
             OnPropertyChanged(nameof(IsDownloading));
-            Uri url = new Uri("https://github.com/cabiste69/TunisiaPrayer/releases/download/1.0.0/TunisiaPrayer-1.0.apk");
+            Uri url = new Uri("https://github.com/quran/quran_android/releases/download/v3.1.2/quran-3.1.2.apk");
 
             GetFileUri();
 
-            //WebClient myWebClient = new WebClient();
-            //myWebClient.DownloadFileAsync(url, fileUri);
+            WebClient myWebClient = new WebClient();
+            myWebClient.DownloadFileAsync(url, fileUri);
             IsDownloading = "completed downloading";
             OnPropertyChanged(nameof(IsDownloading));
-            //myWebClient.DownloadFileCompleted += new AsyncCompletedEventHandler(InstallUpdate);
-            InstallUpdate(null, null);
+            myWebClient.DownloadFileCompleted += new AsyncCompletedEventHandler(InstallUpdate);
+            //InstallUpdate(null, null);
         }
 
         private void InstallUpdate(object sender, AsyncCompletedEventArgs e)
         {
-            
+
             packageInstaller.OnCreate(fileUri);
         }
 
