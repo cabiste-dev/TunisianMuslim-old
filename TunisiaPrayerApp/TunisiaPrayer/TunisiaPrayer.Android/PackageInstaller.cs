@@ -41,8 +41,10 @@ namespace TunisiaPrayer.Droid
             }
 
 
-            Intent promptInstall = new Intent(Intent.ActionView).SetDataAndType(uri, "application/vnd.android.package-archive");
+
+            Intent promptInstall = new Intent(Intent.ActionView, uri).SetDataAndType(uri, "application/vnd.android.package-archive");
             promptInstall.AddFlags(ActivityFlags.NewTask);
+            promptInstall.AddFlags(ActivityFlags.GrantReadUriPermission);
             Application.Context.StartActivity(promptInstall);
 
 
