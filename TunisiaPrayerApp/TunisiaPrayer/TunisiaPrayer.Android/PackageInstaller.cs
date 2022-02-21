@@ -1,14 +1,10 @@
 ﻿[assembly: Xamarin.Forms.Dependency(typeof(TunisiaPrayer.Droid.InstallApkSessionApi))]
 namespace TunisiaPrayer.Droid
 {
-    using System;
-    using System.IO;
-
     using Android.App;
     using Android.Content;
     using Android.Content.PM;
     using Android.OS;
-    using Android.Widget;
     using TunisiaPrayer.Services;
     using Xamarin.Essentials;
 
@@ -16,128 +12,49 @@ namespace TunisiaPrayer.Droid
     [Activity(Label = "InstallApkSessionApi", LaunchMode = LaunchMode.SingleTop)]
     public class InstallApkSessionApi : Activity, IPackageInstaller
     {
-        private static readonly string PACKAGE_INSTALLED_ACTION = $"{AppInfo.PackageName}.apis.content.SESSION_API_PACKAGE_INSTALLED";
-
-        public void OnCreate(string apkPath)
+        private Android.Net.Uri _uri;
+        public void InstallApk(string apkPath)
         {
-            //Intent unKnownSourceIntent = new Intent(Android.Provider.Settings.ActionManageUnknownAppSources).SetData((Android.Net.Uri)string.Format("package:%s", AppInfo.PackageName));
+            //if (!PermissionGranted()) { return; }
+            SetUri(apkPath);
+            StartInstallation();
+        }
 
-            //this only works for android API below 26
-            Android.Net.Uri uri = Android.Net.Uri.FromFile(new Java.IO.File(apkPath));
-
-            //that's why i need to check here for the android version
-            if (Build.VERSION.SdkInt >= BuildVersionCodes.O)
-            {
-                //original condition -> !Activity.GetPackageManager().canRequestPackageInstalls()
-                if (!Android.App.Application.Context.PackageManager.CanRequestPackageInstalls())
-                {
-                    //original parameters -> unKnownSourceIntent, Constant.UNKNOWN_RESOURCE_INTENT_REQUEST_CODE
-                    //StartActivityForResult(unKnownSourceIntent, Permissions.);
-                    Application.Context.StartActivity(new Intent(Android.Provider.Settings.ActionManageUnknownAppSources, Android.Net.Uri.Parse("package:" + Android.App.Application.Context.PackageName)).SetFlags(ActivityFlags.NewTask));
-
-                }
-                //this is the format for android API 26 or above
-                uri = FileProvider.GetUriForFile(Application.Context, AppInfo.PackageName + ".provider", new Java.IO.File(apkPath));
-            }
-
-
-
-            Intent promptInstall = new Intent(Intent.ActionView, uri).SetDataAndType(uri, "application/vnd.android.package-archive");
+        private void StartInstallation()
+        {
+            Intent promptInstall = new Intent(Intent.ActionView, _uri).SetDataAndType(_uri, "application/vnd.android.package-archive");
             promptInstall.AddFlags(ActivityFlags.NewTask);
             promptInstall.AddFlags(ActivityFlags.GrantReadUriPermission);
             Application.Context.StartActivity(promptInstall);
-
-
-            //Install(apkPath);
         }
 
-        private void Install(string apkPath)
+        private void SetUri(string apkPath)
         {
-            PackageInstaller.Session session = null;
-            try
+            if (Build.VERSION.SdkInt >= BuildVersionCodes.O)
             {
-                PackageInstaller packageInstaller = Android.App.Application.Context.PackageManager.PackageInstaller;
-                PackageInstaller.SessionParams @params = new PackageInstaller.SessionParams(PackageInstallMode.FullInstall);
-                int sessionId = packageInstaller.CreateSession(@params);
-                session = packageInstaller.OpenSession(sessionId);
-                long apkSize = new FileInfo(apkPath).Length;
-                AddApkToInstallSession(apkPath, session, apkSize);
-                // Create an install status receiver.
-                Context context = Android.App.Application.Context;
-                //the error is no longer here
-                Intent intent = new Intent(context, typeof(InstallApkSessionApi));
-                intent.SetAction(PACKAGE_INSTALLED_ACTION);
-                PendingIntent pendingIntent = PendingIntent.GetActivity(context, 0, intent, 0);
-                IntentSender statusReceiver = pendingIntent.IntentSender;
+                //this is the format for android API 26 or above
+                _uri = FileProvider.GetUriForFile(Application.Context, AppInfo.PackageName + ".provider", new Java.IO.File(apkPath));
+            }
+            else
+            {
+                _uri = Android.Net.Uri.FromFile(new Java.IO.File(apkPath));
+            }
+        }
 
-                // Commit the session (this will start the installation workflow).
-                session.Commit(statusReceiver);
-            }
-            catch (IOException ex)
+        private bool PermissionGranted()
+        {
+            bool result = true;
+
+            if (Build.VERSION.SdkInt >= BuildVersionCodes.O)
             {
-                throw new InvalidOperationException("Couldn't install package", ex);
-            }
-            catch
-            {
-                if (session != null)
+                if (!Android.App.Application.Context.PackageManager.CanRequestPackageInstalls())
                 {
-                    session.Abandon();
-                }
-
-                throw;
-            }
-        }
-
-
-        private void AddApkToInstallSession(string assetName, PackageInstaller.Session session, long apkSize)
-        {
-            // It's recommended to pass the file size to openWrite(). Otherwise installation may fail
-            // if the disk is almost full.
-            using Stream packageInSession = session.OpenWrite("package", 0, apkSize);
-            using Stream @is = File.Open(assetName, FileMode.Open);
-            byte[] buffer = new byte[16384];
-            int n;
-            while ((n = @is.Read(buffer)) > 0)
-            {
-                packageInSession.Write(buffer, 0, n);
-            }
-        }
-
-        // Note: this Activity must run in singleTop launchMode for it to be able to receive the intent
-        // in onNewIntent().
-        protected override void OnNewIntent(Intent intent)
-        {
-            Bundle extras = intent.Extras;
-            if (PACKAGE_INSTALLED_ACTION.Equals(intent.Action))
-            {
-                PackageInstallStatus status = (PackageInstallStatus)extras.GetInt(PackageInstaller.ExtraStatus);
-                string message = extras.GetString(PackageInstaller.ExtraStatusMessage);
-                switch (status)
-                {
-                    case PackageInstallStatus.PendingUserAction:
-                        // This test app isn't privileged, so the user has to confirm the install.
-                        Intent confirmIntent = (Intent)extras.Get(Intent.ExtraIntent);
-                        this.StartActivity(confirmIntent);
-                        break;
-                    case PackageInstallStatus.Success:
-                        Toast.MakeText(this, "Install succeeded!", ToastLength.Short).Show();
-                        break;
-                    case PackageInstallStatus.Failure:
-                    case PackageInstallStatus.FailureAborted:
-                    case PackageInstallStatus.FailureBlocked:
-                    case PackageInstallStatus.FailureConflict:
-                    case PackageInstallStatus.FailureIncompatible:
-                    case PackageInstallStatus.FailureInvalid:
-                    case PackageInstallStatus.FailureStorage:
-                        Toast.MakeText(this, "Install failed! " + status + ", " + message,
-                                ToastLength.Short).Show();
-                        break;
-                    default:
-                        Toast.MakeText(this, "Unrecognized status received from installer: " + status,
-                                ToastLength.Short).Show();
-                        break;
+                    //ask the user if they want to grant the permission for the app or no
+                    Intent requestPackageInstallPerrmission = new Intent(Android.Provider.Settings.ActionManageUnknownAppSources, Android.Net.Uri.Parse("package:" + Android.App.Application.Context.PackageName)).SetFlags(ActivityFlags.NewTask);
+                    Application.Context.StartActivity(requestPackageInstallPerrmission);
                 }
             }
+            return result;
         }
     }
 }

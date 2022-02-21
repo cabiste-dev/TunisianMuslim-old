@@ -7,10 +7,9 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Xamarin.Essentials;
 using System.Net;
-using Xamarin.Forms.PlatformConfiguration;
-using System.IO;
 using TunisiaPrayer.Services;
 using System.ComponentModel;
+using Xamarin.CommunityToolkit.Extensions;
 
 namespace TunisiaPrayer.Views
 {
@@ -52,7 +51,7 @@ namespace TunisiaPrayer.Views
 
         private async void Button_Clicked(object sender, EventArgs e)
         {
-            if (await permissionDenied())
+            if (await StoragePermissionDenied())
             {
                 return;
             }
@@ -60,7 +59,7 @@ namespace TunisiaPrayer.Views
             //rel.Text += "\n" + pathService.PublicExternalFolder;
             IsDownloading = "downloading";
             OnPropertyChanged(nameof(IsDownloading));
-            Uri url = new Uri("https://github.com/quran/quran_android/releases/download/v3.1.2/quran-3.1.2.apk");
+            Uri url = new Uri($"https://github.com/quran/quran_android/releases/download/v3.1.2/quran-3.1.2.apk");
 
             GetFileUri();
 
@@ -74,11 +73,11 @@ namespace TunisiaPrayer.Views
 
         private void InstallUpdate(object sender, AsyncCompletedEventArgs e)
         {
-
-            packageInstaller.OnCreate(fileUri);
+            packageInstaller.InstallApk(fileUri);
         }
 
-        private async Task<bool> permissionDenied()
+        //quite confusing but it's correct
+        private async Task<bool> StoragePermissionDenied()
         {
             PermissionStatus permissionWrite = await Permissions.CheckStatusAsync<Permissions.StorageWrite>();
             PermissionStatus permissionRead = await Permissions.CheckStatusAsync<Permissions.StorageRead>();
