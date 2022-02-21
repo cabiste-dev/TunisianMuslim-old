@@ -5,10 +5,11 @@ using System.Threading.Tasks;
 
 namespace TunisiaPrayer.Services
 {
-    public interface IPathService
+    public interface IDeviceInfoService
     {
         //string InternalFolder { get; }
         string PublicExternalFolder { get; }
+        string Architecture { get; }
         //void install(string filePath);
         //string PrivateExternalFolder { get; }
     }

@@ -81,7 +81,7 @@
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
     <Compile Include="PackageInstaller.cs" />
-    <Compile Include="PathService.cs" />
+    <Compile Include="DeviceInfoService.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

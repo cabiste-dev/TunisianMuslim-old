@@ -16,10 +16,10 @@ using System.Threading.Tasks;
 using TunisiaPrayer.Services;
 using Xamarin.Forms;
 
-[assembly: Xamarin.Forms.Dependency(typeof(TunisiaPrayer.Droid.PathService))]
+[assembly: Xamarin.Forms.Dependency(typeof(TunisiaPrayer.Droid.DeviceInfoService))]
 namespace TunisiaPrayer.Droid
 {
-    public class PathService : IPathService
+    public class DeviceInfoService : IDeviceInfoService
     {
         private Context context = Android.App.Application.Context;
         public string PublicExternalFolder
@@ -28,6 +28,15 @@ namespace TunisiaPrayer.Droid
             {
                 //return context.GetExternalFilesDir(Android.OS.Environment.DirectoryDownloads).ToPath().ToString();
                 return Environment.GetExternalStoragePublicDirectory(Environment.DirectoryDownloads).ToString();
+            }
+        }
+
+        public string Architecture
+        {
+            get
+            {
+                return Android.OS.Build.SupportedAbis[0];
+
             }
         }
 

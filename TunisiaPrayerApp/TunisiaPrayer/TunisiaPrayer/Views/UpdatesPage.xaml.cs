@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 using Octokit;
 using Xamarin.Forms;
@@ -17,63 +15,90 @@ namespace TunisiaPrayer.Views
     public partial class UpdatesPage : ContentPage
     {
         public bool UpdateAvailable { get; set; } = false;
-        public string IsDownloading { get; set; }
-        IPathService pathService;
+        public string LatestReleaseInfo { get; set; }
+        public string UpdateButton { get; set; } = "Update";
+        IDeviceInfoService deviceService;
         IPackageInstaller packageInstaller;
-        private string fileUri;
+        private string _fileUri;
+        private string _newVersionTag;
         public UpdatesPage()
         {
             InitializeComponent();
             BindingContext = this;
-            pathService = DependencyService.Get<IPathService>();
+            deviceService = DependencyService.Get<IDeviceInfoService>();
             packageInstaller = DependencyService.Get<IPackageInstaller>();
         }
 
-        private async void RefreshButton_Clicked(object sender, EventArgs e)
+
+        protected override async void OnAppearing()
         {
+            await CheckForUpdates();
+        }
+
+        private async Task CheckForUpdates()
+        {
+
+            if (Connectivity.NetworkAccess != NetworkAccess.Internet)
+            {
+                await this.DisplayToastAsync("no internet connection :(", 5000);
+                return;
+            }
+
             var client = new GitHubClient(new ProductHeaderValue("tunisiaPrayerApp"));
             //yes that's the repo's id, it's public
             var releases = await client.Repository.Release.GetAll(451233074);
+            rel.Text = releases[0].Name;
 
-            for (int i = 0; i < releases.Count; i++)
-            {
-                rel.Text = releases[i].Name;
-            }
-
-            //releases[0].TagName != VersionTracking.CurrentVersion
-            if (true)
+            if (releases[0].TagName != VersionTracking.CurrentVersion)
             {
                 UpdateAvailable = true;
+                _newVersionTag = releases[0].TagName;
                 OnPropertyChanged(nameof(UpdateAvailable));
-                //versionDiff.Text = $"current is {AppInfo.VersionString}, new is {releases[0].TagName}";
+                ReleaseChanges(releases[0].Body);
+            }
+            else
+            {
+                rel.Text = "No updates Available";
             }
         }
 
-        private async void Button_Clicked(object sender, EventArgs e)
+        void ReleaseChanges(string release)
         {
+            LatestReleaseInfo = release;
+            OnPropertyChanged(nameof(LatestReleaseInfo));
+        }
+
+        private async void UpdateButton_Clicked(object sender, EventArgs e)
+        {
+
+            if (Connectivity.NetworkAccess != NetworkAccess.Internet)
+            {
+                await this.DisplayToastAsync("no internet connection :(", 5000);
+                return;
+            }
+
             if (await StoragePermissionDenied())
             {
                 return;
             }
+            string appName = $"TunisiaPrayer-{deviceService.Architecture}-v{_newVersionTag}.apk";
+            Uri url = new Uri($"https://github.com/cabiste69/TunisiaPrayer/releases/download/{_newVersionTag}/{appName}");
 
-            //rel.Text += "\n" + pathService.PublicExternalFolder;
-            IsDownloading = "downloading";
-            OnPropertyChanged(nameof(IsDownloading));
-            Uri url = new Uri($"https://github.com/quran/quran_android/releases/download/v3.1.2/quran-3.1.2.apk");
-
-            GetFileUri();
-
+            GetFileUri(appName);
+            UpdateButton = "Downloading...";
+            UpdateAvailable = false;
+            OnPropertyChanged(nameof(UpdateAvailable));
+            OnPropertyChanged(nameof(UpdateButton));
             WebClient myWebClient = new WebClient();
-            myWebClient.DownloadFileAsync(url, fileUri);
-            IsDownloading = "completed downloading";
-            OnPropertyChanged(nameof(IsDownloading));
+            myWebClient.DownloadFileAsync(url, _fileUri);
             myWebClient.DownloadFileCompleted += new AsyncCompletedEventHandler(InstallUpdate);
-            //InstallUpdate(null, null);
         }
 
         private void InstallUpdate(object sender, AsyncCompletedEventArgs e)
         {
-            packageInstaller.InstallApk(fileUri);
+            UpdateButton = "Installing...";
+            OnPropertyChanged(nameof(UpdateButton));
+            packageInstaller.InstallApk(_fileUri);
         }
 
         //quite confusing but it's correct
@@ -93,9 +118,9 @@ namespace TunisiaPrayer.Views
             return permissionWrite != PermissionStatus.Granted && permissionRead != PermissionStatus.Granted;
 
         }
-        private void GetFileUri()
+        private void GetFileUri(string appName)
         {
-            fileUri = pathService.PublicExternalFolder + "/test.apk";
+            _fileUri = $"{deviceService.PublicExternalFolder}/{appName}";
         }
 
     }
