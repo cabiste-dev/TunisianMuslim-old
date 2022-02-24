@@ -42,19 +42,11 @@ namespace TunisiaPrayer.ViewModels
 
         public async Task SetTimes()
         {
-            try
-            {
-                prayersTime = await Prayers.GetTime(App.statesData[App.selectedStateIndex].Id, App.statesData[App.selectedStateIndex].Delegations[App.selectedDelegateIndex].Id);
-                TimeNow = DateTime.Now.ToString("dd-MM-yyyy");
-                setArea();
-                OnPropertyChanged(nameof(AreaSelected));
-                OnPropertyChanged(nameof(prayersTime));
-            }
-            catch (Exception ex)
-            {
-                AreaSelected = ex.ToString();
-                OnPropertyChanged(nameof(AreaSelected));
-            }
+            prayersTime = await Prayers.GetTimeExperimental(App.statesData[App.selectedStateIndex].Id, App.statesData[App.selectedStateIndex].Delegations[App.selectedDelegateIndex].Id);
+            TimeNow = DateTime.Now.ToString("dd-MM-yyyy");
+            setArea();
+            OnPropertyChanged(nameof(AreaSelected));
+            OnPropertyChanged(nameof(prayersTime));
         }
     }
 

@@ -81,6 +81,7 @@ namespace TunisiaPrayer.Views
             {
                 return;
             }
+
             string appName = $"TunisiaPrayer-{deviceService.Architecture}-v{_newVersionTag}.apk";
             Uri url = new Uri($"https://github.com/cabiste69/TunisiaPrayer/releases/download/{_newVersionTag}/{appName}");
 

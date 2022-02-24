@@ -16,10 +16,10 @@
             <StackLayout Grid.Row="0" Grid.Column="1">
 
                 <Label Text="{Binding AreaSelected}" VerticalOptions="CenterAndExpand"
-                HorizontalOptions="CenterAndExpand" FontSize="Medium" TextColor="#FFFFFF"/>
+                HorizontalOptions="CenterAndExpand" FontSize="Medium" TextColor="White"/>
 
                 <Label x:Name="TimeNow" VerticalOptions="CenterAndExpand"
-                HorizontalOptions="CenterAndExpand" FontSize="Medium" TextColor="#FFFFFF"/>
+                HorizontalOptions="CenterAndExpand" FontSize="Medium" TextColor="White"/>
             </StackLayout>
             <!--Prayers-->
             <StackLayout Grid.Row="1" Grid.Column="1">

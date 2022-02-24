@@ -89,6 +89,9 @@
     <FlyoutItem Title="Updates" Icon="icon_feed.png">
         <ShellContent Route="Updates" ContentTemplate="{DataTemplate local:UpdatesPage}" />
     </FlyoutItem>
+    <FlyoutItem Title="Benchmarks" Icon="icon_feed.png">
+        <ShellContent Route="Benchmarks" ContentTemplate="{DataTemplate local:Benchmarks}" />
+    </FlyoutItem>
 
     <!-- When the Flyout is visible this will be a menu item you can tie a click behavior to  -->
 

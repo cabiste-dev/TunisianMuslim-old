@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TunisiaPrayer.Views.Benchmarks">
+    <ContentPage.Content>
+        <Grid RowDefinitions="*,2*,8*,8*,2*,*" ColumnDefinitions="*,10*,*">
+            <Button Grid.Row="1" Grid.Column="1" Text="click to start test" Clicked="Button_Clicked"/>
+            <Label Text="benchmark 1 results" Grid.Row="2" Grid.Column="1" x:Name="Bench1" TextColor="Black"/>
+            <Label Text="benchmark 2 results" Grid.Row="3" Grid.Column="1" x:Name="Bench2" TextColor="Black"/>
+            <Button Grid.Row="4" Grid.Column="1" Text="clear benchmark" Clicked="ClearBenches"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
