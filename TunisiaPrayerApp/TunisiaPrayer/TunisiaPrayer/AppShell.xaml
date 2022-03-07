@@ -83,6 +83,9 @@
     <FlyoutItem Title="prayers" Icon="icon_feed.png">
         <ShellContent Route="PrayerTimePage" ContentTemplate="{DataTemplate local:PrayerTimePage}" />
     </FlyoutItem>
+    <FlyoutItem Title="Quran" Icon="icon_feed.png">
+        <ShellContent Route="QuranPage" ContentTemplate="{DataTemplate local:QuranPage}" />
+    </FlyoutItem>
     <FlyoutItem Title="Settings" Icon="icon_feed.png">
         <ShellContent Route="Settings" ContentTemplate="{DataTemplate local:SettingsPage}" />
     </FlyoutItem>

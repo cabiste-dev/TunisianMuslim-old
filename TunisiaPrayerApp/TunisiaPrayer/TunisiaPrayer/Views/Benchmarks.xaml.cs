@@ -15,7 +15,7 @@ namespace TunisiaPrayer.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Benchmarks : ContentPage
     {
-        private int mins = 0, totalMilisecs = 0, milisecs = 0;
+        private int totalMilisecs = 0, milisecs = 0;
         public Benchmarks()
         {
             InitializeComponent();
@@ -23,6 +23,7 @@ namespace TunisiaPrayer.Views
 
         private void Button_Clicked(object sender, EventArgs e)
         {
+            ClearBenches(null, null);
             string PrayUrl = "https://www.meteo.tn/horaire_gouvernorat/" + DateTime.Now.ToString("yyyy-MM-dd") + $"/361/634";
             //string SteamUrl = "https://api.steampowered.com/ISteamNews/GetNewsForApp/v0002/?appid=440&count=3&maxlength=300&format=json";
 
@@ -32,15 +33,18 @@ namespace TunisiaPrayer.Views
             timer.Start();
             for (int i = 0; i < 10; i++)
             {
-                StringReader_Bench(PrayUrl);
-            }
-            Average(1);
-            Task.Delay(2000);
-            for (int i = 0; i < 10; i++)
-            {
                 DirectDeserialization_Bench(PrayUrl);
             }
             Average(2);
+            Task.Delay(2000);
+            milisecs = 0;
+            totalMilisecs = 0;
+            for (int i = 0; i < 10; i++)
+            {
+                StringReader_Bench(PrayUrl);
+            }
+            Average(1);
+
             timer.Stop();
         }
 
@@ -48,10 +52,10 @@ namespace TunisiaPrayer.Views
         {
             if (i == 1)
             {
-                Bench1.Text += $"\n Average: {TimeSpan.FromMilliseconds(totalMilisecs / 10)}";
+                Bench1.Text += $"\n Average: {TimeSpan.FromMilliseconds(totalMilisecs / 10).TotalMilliseconds}";
                 return;
             }
-            Bench2.Text += $"\n Average: {TimeSpan.FromMilliseconds(totalMilisecs / 10)}";
+            Bench2.Text += $"\n Average: {TimeSpan.FromMilliseconds(totalMilisecs / 10).TotalMilliseconds}";
         }
 
         private void ClearBenches(object sender, EventArgs e)
@@ -63,11 +67,11 @@ namespace TunisiaPrayer.Views
         {
             if (i == 1)
             {
-                Bench1.Text += $"\n {TimeSpan.FromMilliseconds(milisecs)}";
+                Bench1.Text += $"\n {TimeSpan.FromMilliseconds(milisecs).TotalMilliseconds}";
                 milisecs = 0;
                 return;
             }
-            Bench2.Text += $"\n {TimeSpan.FromMilliseconds(milisecs)}";
+            Bench2.Text += $"\n {TimeSpan.FromMilliseconds(milisecs).Milliseconds}";
             milisecs = 0;
         }
 

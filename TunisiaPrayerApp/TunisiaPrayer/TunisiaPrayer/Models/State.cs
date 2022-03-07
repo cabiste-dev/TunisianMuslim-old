@@ -9,7 +9,7 @@ namespace TunisiaPrayer.Models
 
     public class Rootobject
     {
-        public int Id { get; set; }
+        public short Id { get; set; }
         public string NameAr { get; set; }
         public string NameEn { get; set; }
         public List<Delegation> Delegations { get; set; }
@@ -22,7 +22,7 @@ namespace TunisiaPrayer.Models
 
     public class Delegation
     {
-        public int Id { get; set; }
+        public short Id { get; set; }
         public string NameAr { get; set; }
         public string NameEn { get; set; }
         public override string ToString()
@@ -33,17 +33,15 @@ namespace TunisiaPrayer.Models
     public class StateService
     {
 
-        public async Task<List<Rootobject>> LoadData()
+        public List<Rootobject> LoadData()
         {
             var assembly = IntrospectionExtensions.GetTypeInfo(typeof(App)).Assembly;
             Stream stream = assembly.GetManifestResourceStream($"TunisiaPrayer.states.json");
-            string text = "";
+            //string text = "";
             using (var reader = new StreamReader(stream))
             {
-                text = await reader.ReadToEndAsync();
+                return JsonConvert.DeserializeObject<List<Rootobject>>(reader.ReadToEndAsync().Result);
             }
-
-            return JsonConvert.DeserializeObject<List<Rootobject>>(text);
         }
     }
 }

@@ -19,11 +19,11 @@ namespace TunisiaPrayer
             MainPage = new AppShell();
         }
 
-        protected override async void OnStart()
+        protected override void OnStart()
         {
             StateService something = new StateService();
-            statesData = await something.LoadData();
-            await LoadPrefrences();
+            statesData = something.LoadData();
+            LoadPrefrences();
         }
 
         protected override void OnSleep()
@@ -34,7 +34,7 @@ namespace TunisiaPrayer
         {
         }
 
-        async Task LoadPrefrences()
+        void LoadPrefrences()
         {
             selectedStateIndex = Convert.ToByte(Preferences.Get("selectedStateIndex", 0));
             selectedDelegateIndex = Convert.ToByte(Preferences.Get("selectedDelegate", 0));

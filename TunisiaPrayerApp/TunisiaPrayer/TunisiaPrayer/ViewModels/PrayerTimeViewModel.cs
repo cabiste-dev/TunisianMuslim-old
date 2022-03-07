@@ -18,7 +18,10 @@ namespace TunisiaPrayer.ViewModels
         public PrayerTimeViewModel()
         {
             RefreshTime = new AsyncCommand(SetTimes);
-            //setArea();
+            if (App.statesData != null)
+            {
+                SetTimes();
+            }
         }
 
         public string areaSelected { get; set; }
@@ -42,7 +45,7 @@ namespace TunisiaPrayer.ViewModels
 
         public async Task SetTimes()
         {
-            prayersTime = await Prayers.GetTimeExperimental(App.statesData[App.selectedStateIndex].Id, App.statesData[App.selectedStateIndex].Delegations[App.selectedDelegateIndex].Id);
+            prayersTime = await Prayers.GetTime(App.statesData[App.selectedStateIndex].Id, App.statesData[App.selectedStateIndex].Delegations[App.selectedDelegateIndex].Id);
             TimeNow = DateTime.Now.ToString("dd-MM-yyyy");
             setArea();
             OnPropertyChanged(nameof(AreaSelected));

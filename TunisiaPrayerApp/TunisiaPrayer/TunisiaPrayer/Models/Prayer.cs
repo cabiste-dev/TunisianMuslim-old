@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-
-
-public class Prayer
+﻿public class Prayer
 {
     public Data data { get; set; }
 }
