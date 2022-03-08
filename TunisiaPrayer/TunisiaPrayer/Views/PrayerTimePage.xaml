@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:viewmodels="clr-namespace:TunisiaPrayer.ViewModels"
+             x:Class="TunisiaPrayer.Views.PrayerTimePage"
+             x:DataType="viewmodels:PrayerTimeViewModel"
+             BackgroundColor="#272c34">
+
+    <ContentPage.BindingContext>
+        <viewmodels:PrayerTimeViewModel/>
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        <Grid RowDefinitions="2*,6*,2*" ColumnDefinitions="*,4*,4*,*">
+
+
+            <StackLayout Grid.Row="0" Grid.Column="1">
+
+                <Label Text="{Binding AreaSelected}" VerticalOptions="CenterAndExpand"
+                HorizontalOptions="CenterAndExpand" FontSize="Medium" TextColor="White"/>
+
+                <Label x:Name="TimeNow" VerticalOptions="CenterAndExpand"
+                HorizontalOptions="CenterAndExpand" FontSize="Medium" TextColor="White"/>
+            </StackLayout>
+            <!--Prayers-->
+            <StackLayout Grid.Row="1" Grid.Column="1">
+                <Label Text="sobh"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" FontSize="Large" TextColor="#FFFFFF" />
+                <Label Text="dhohr"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" FontSize="Large" TextColor="#FFFFFF"/>
+                <Label Text="aser"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" FontSize="Large" TextColor="#FFFFFF"/>
+                <Label Text="magreb"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" FontSize="Large" TextColor="#FFFFFF"/>
+                <Label Text="isha"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" FontSize="Large" TextColor="#FFFFFF"/>
+            </StackLayout>
+            <!--Times-->
+            <StackLayout Grid.Row="1" Grid.Column="2" >
+                <Label Text="{Binding prayersTime[0]}"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" FontSize="Large" TextColor="#FFFFFF" />
+                <Label Text="{Binding prayersTime[1]}"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" FontSize="Large" TextColor="#FFFFFF"/>
+                <Label Text="{Binding prayersTime[2]}"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" FontSize="Large" TextColor="#FFFFFF"/>
+                <Label Text="{Binding prayersTime[3]}"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" FontSize="Large" TextColor="#FFFFFF"/>
+                <Label Text="{Binding prayersTime[4]}"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" FontSize="Large" TextColor="#FFFFFF"/>
+            </StackLayout>
+
+            <!--control buttons-->
+            <StackLayout Grid.Row="2" Grid.Column="1">
+                <Button Text="refresh" Command="{Binding RefreshTime}" />
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
+    
