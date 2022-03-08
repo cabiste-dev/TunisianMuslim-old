@@ -1,2 +1,7 @@
 # TunisiaPrayer
-an android app for the prayer time in tunisia
+
+A simple android app that shows the prayer time for Tunisia 
+
+# Credits
+
+ - icon: modified version of [surang's icon](https://www.flaticon.com/free-icon/moon_5899729) by my friend Azyx
