@@ -17,6 +17,11 @@ public class Chapter
     //public int[] pages { get; set; }
     public Translated_Name translated_name { get; set; }
 
+    public override string ToString()
+    {
+        return name_simple;
+    }
+
 }
 
 public class Translated_Name
