@@ -13,6 +13,7 @@ namespace TunisiaPrayer
             InitializeComponent();
             Routing.RegisterRoute(nameof(PrayerTimePage), typeof(PrayerTimePage));
             Routing.RegisterRoute(nameof(SettingsPage), typeof(SettingsPage));
+            Routing.RegisterRoute(nameof(ChapterPage), typeof(ChapterPage));
         }
         private async void OnMenuItemClicked(object sender, EventArgs e)
         {

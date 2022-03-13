@@ -1,6 +1,10 @@
 ﻿using MvvmHelpers;
+using MvvmHelpers.Commands;
 using Newtonsoft.Json;
 using System.Net.Http;
+using System.Threading.Tasks;
+using System.Windows.Input;
+using TunisiaPrayer.ViewModels;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -10,10 +14,13 @@ namespace TunisiaPrayer.Views
     public partial class QuranPage : ContentPage
     {
         public ObservableRangeCollection<Chapter> chaps { get; set; } = new ObservableRangeCollection<Chapter>();
+        public ChaptersRootobject test { get; set; }
+        public ICommand RefreshCom { get; set; }
         public QuranPage()
         {
             InitializeComponent();
             BindingContext = this;
+            RefreshCom = new AsyncCommand(LoadQuran);
             LoadQuran();
         }
 
@@ -28,17 +35,36 @@ namespace TunisiaPrayer.Views
                 }
             }
         }
-        public async void LoadQuran()
+        public async Task LoadQuran()
         {
-            ChaptersRootobject chapters = new ChaptersRootobject();
+
+            IsBusy = true;
+            test = new ChaptersRootobject();
             string url = "https://api.quran.com/api/v4/chapters?language=en";
             var client = new HttpClient();
             string response = await client.GetStringAsync(url);
-            chapters = JsonConvert.DeserializeObject<ChaptersRootobject>(response);
-            for (byte i = 0; i < 114; i++)
-            {
-                Chapters.Add(new Chapter() { bismillah_pre = chapters.chapters[i].bismillah_pre, id = chapters.chapters[i].id, name_arabic = chapters.chapters[i].name_arabic, name_simple = chapters.chapters[i].name_simple, translated_name = chapters.chapters[i].translated_name, verses_count = chapters.chapters[i].verses_count });
-            }
+            test = JsonConvert.DeserializeObject<ChaptersRootobject>(response);
+            OnPropertyChanged(nameof(test));
+            IsBusy = false;
+        }
+
+        private async void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            await Shell.Current.GoToAsync($"{nameof(ChapterPage)}?{nameof(ChapterViewModel.ChapterId)}={e.SelectedItemIndex + 1}");
+        }
+
+        //opens the tapped chapter in a new view to read it
+        private void ListView_ItemTapped(object sender, ItemTappedEventArgs e)
+        {
+            //deselcts the tapped item 
+            ((ListView)sender).SelectedItem = null;
+
+        }
+
+        //to download the selcted chapters
+        private void MenuItem_Clicked(object sender, System.EventArgs e)
+        {
+
         }
     }
 }

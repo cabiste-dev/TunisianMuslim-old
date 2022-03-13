@@ -4,12 +4,24 @@
              x:Class="TunisiaPrayer.Views.QuranPage"
              BackgroundColor="#272c34"
              Title="Quran">
+
     <ContentPage.Content>
         <Grid>
-            <ListView ItemsSource="{Binding Chapters}" HasUnevenRows="True">
+            <ListView ItemsSource="{Binding test.chapters}" 
+                      CachingStrategy="RecycleElement"
+                      HasUnevenRows="True"
+                      IsPullToRefreshEnabled="True"
+                      RefreshCommand="{Binding RefreshCom}"
+                      IsRefreshing="{Binding IsBusy, Mode=OneWay}"
+                      ItemSelected="ListView_ItemSelected"
+                      ItemTapped="ListView_ItemTapped"
+                      RefreshControlColor="Black">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
+                            <ViewCell.ContextActions>
+                                <MenuItem Text="Download" Clicked="MenuItem_Clicked"/>
+                            </ViewCell.ContextActions>
                             <Grid ColumnDefinitions="5*,*,5*" Padding="10">
                                 <Label Text="{Binding name_simple}" Grid.Column="0" HorizontalTextAlignment="Center"/>
                                 <Ellipse Fill="#343a40" Grid.Column="1" WidthRequest="30" HeightRequest="30" HorizontalOptions="Center"/>
@@ -22,6 +34,4 @@
             </ListView>
         </Grid>
     </ContentPage.Content>
-
-
 </ContentPage>

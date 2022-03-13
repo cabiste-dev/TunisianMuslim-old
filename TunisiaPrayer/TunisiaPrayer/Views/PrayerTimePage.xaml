@@ -23,19 +23,19 @@
             </StackLayout>
             <!--Prayers-->
             <StackLayout Grid.Row="1" Grid.Column="1">
-                <Label Text="sobh"
+                <Label Text="Fajr"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" FontSize="Large" TextColor="#FFFFFF" />
-                <Label Text="dhohr"
+                <Label Text="Dhohr"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" FontSize="Large" TextColor="#FFFFFF"/>
-                <Label Text="aser"
+                <Label Text="Aser"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" FontSize="Large" TextColor="#FFFFFF"/>
-                <Label Text="magreb"
+                <Label Text="Magreb"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" FontSize="Large" TextColor="#FFFFFF"/>
-                <Label Text="isha"
+                <Label Text="Isha"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" FontSize="Large" TextColor="#FFFFFF"/>
             </StackLayout>
