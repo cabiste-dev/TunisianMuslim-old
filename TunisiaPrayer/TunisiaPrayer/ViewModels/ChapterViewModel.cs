@@ -19,6 +19,7 @@ namespace TunisiaPrayer.ViewModels
             set
             {
                 _verses = value;
+                OnPropertyChanged(nameof(Verses));
             }
         }
         public int ChapterId
@@ -41,7 +42,6 @@ namespace TunisiaPrayer.ViewModels
             var client = new HttpClient();
             string response = await client.GetStringAsync(url);
             Verses = JsonConvert.DeserializeObject<VerseRootobject>(response);
-            OnPropertyChanged(nameof(Verses));
             IsBusy = false;
         }
     }

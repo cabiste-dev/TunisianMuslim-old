@@ -6,13 +6,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resources\bismallah.png" />
     <None Remove="states.json" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="states.json">
+    <Resource Include="states.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
+    </Resource>
   </ItemGroup>
 
   <ItemGroup>
@@ -20,6 +21,10 @@
     <PackageReference Include="Octokit" Version="0.50.0" />
     <PackageReference Include="Refractored.MvvmHelpers" Version="1.6.2" />
     <PackageReference Include="Xamarin.CommunityToolkit" Version="2.0.0" />
+    <PackageReference Include="Xamarin.FFImageLoading" Version="2.4.11.982" />
+    <PackageReference Include="Xamarin.FFImageLoading.Forms" Version="2.4.11.982" />
+    <PackageReference Include="Xamarin.FFImageLoading.Svg" Version="2.4.11.982" />
+    <PackageReference Include="Xamarin.FFImageLoading.Svg.Forms" Version="2.4.11.982" />
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2337" />  
     <PackageReference Include="Xamarin.Essentials" Version="1.7.1" />
   </ItemGroup>
@@ -43,5 +48,9 @@
     <EmbeddedResource Update="Views\UpdatesPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Resources\" />
   </ItemGroup>
 </Project>

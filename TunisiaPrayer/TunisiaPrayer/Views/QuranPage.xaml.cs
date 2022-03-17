@@ -48,16 +48,17 @@ namespace TunisiaPrayer.Views
             IsBusy = false;
         }
 
-        private async void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        private void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            await Shell.Current.GoToAsync($"{nameof(ChapterPage)}?{nameof(ChapterViewModel.ChapterId)}={e.SelectedItemIndex + 1}");
+
         }
 
         //opens the tapped chapter in a new view to read it
-        private void ListView_ItemTapped(object sender, ItemTappedEventArgs e)
+        private async void ListView_ItemTapped(object sender, ItemTappedEventArgs e)
         {
             //deselcts the tapped item 
             ((ListView)sender).SelectedItem = null;
+            await Shell.Current.GoToAsync($"{nameof(ChapterPage)}?{nameof(ChapterViewModel.ChapterId)}={e.ItemIndex + 1}");
 
         }
 
