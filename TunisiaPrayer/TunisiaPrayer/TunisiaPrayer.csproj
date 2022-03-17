@@ -11,6 +11,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="Resources\states.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\bismallah.png" />
     <Resource Include="states.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
@@ -48,9 +53,5 @@
     <EmbeddedResource Update="Views\UpdatesPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Resources\" />
   </ItemGroup>
 </Project>

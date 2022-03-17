@@ -1,0 +1,1460 @@
+[
+  {
+    "Id": 358,
+    "NameAr": "اريانة",
+    "NameEn": "Ariana",
+    "Delegations": [
+      {
+        "Id": 631,
+        "NameAr": "اريانة",
+        "NameEn": "Ariana"
+      },
+      {
+        "Id": 534,
+        "NameAr": "التظامن",
+        "NameEn": "Attadhamon"
+      },
+      {
+        "Id": 530,
+        "NameAr": "قلعة الأندلس",
+        "NameEn": "Kalaat El Andalous  "
+      },
+      {
+        "Id": 533,
+        "NameAr": "المنيهلة",
+        "NameEn": "Mnihla"
+      },
+      {
+        "Id": 531,
+        "NameAr": "رواد",
+        "NameEn": "Raoued"
+      },
+      {
+        "Id": 535,
+        "NameAr": "سيدي ثابت",
+        "NameEn": "Sidi Thabet"
+      },
+      {
+        "Id": 532,
+        "NameAr": "سكرة",
+        "NameEn": "Soukra"
+      }
+    ]
+  },
+  {
+    "Id": 362,
+    "NameAr": "القصرين",
+    "NameEn": "Kasserine",
+    "Delegations": [
+      {
+        "Id": 579,
+        "NameAr": "العيون",
+        "NameEn": "El Ayoun"
+      },
+      {
+        "Id": 577,
+        "NameAr": "فريانة",
+        "NameEn": "Feriana"
+      },
+      {
+        "Id": 578,
+        "NameAr": "فوسانة",
+        "NameEn": "Foussana"
+      },
+      {
+        "Id": 582,
+        "NameAr": "حاسي الفريد",
+        "NameEn": "Hassi Ferid"
+      },
+      {
+        "Id": 574,
+        "NameAr": "حيدرة",
+        "NameEn": "Hidra"
+      },
+      {
+        "Id": 581,
+        "NameAr": "جدليان",
+        "NameEn": "Jedliane"
+      },
+      {
+        "Id": 635,
+        "NameAr": "القصرين",
+        "NameEn": "Kasserine"
+      },
+      {
+        "Id": 580,
+        "NameAr": "ماجل بلعباس",
+        "NameEn": "Majel Bel Abbes"
+      },
+      {
+        "Id": 576,
+        "NameAr": "سبيبة",
+        "NameEn": "Sbiba"
+      },
+      {
+        "Id": 575,
+        "NameAr": "سبيطلة",
+        "NameEn": "Sbitla"
+      },
+      {
+        "Id": 573,
+        "NameAr": "تالة",
+        "NameEn": "Tala"
+      }
+    ]
+  },
+  {
+    "Id": 357,
+    "NameAr": "القيروان",
+    "NameEn": "Kairouan",
+    "Delegations": [
+      {
+        "Id": 528,
+        "NameAr": "بوحجلة",
+        "NameEn": "Bou Hajla"
+      },
+      {
+        "Id": 522,
+        "NameAr": "الشبيكة",
+        "NameEn": "Chebika"
+      },
+      {
+        "Id": 529,
+        "NameAr": "الشراردة",
+        "NameEn": "Chrarda"
+      },
+      {
+        "Id": 524,
+        "NameAr": "العلاء",
+        "NameEn": "El Alaa "
+      },
+      {
+        "Id": 523,
+        "NameAr": "حفوز",
+        "NameEn": "Haffouz"
+      },
+      {
+        "Id": 526,
+        "NameAr": "حاجب العيون",
+        "NameEn": "Hajeb El Ayoun"
+      },
+      {
+        "Id": 630,
+        "NameAr": "القيروان",
+        "NameEn": "Kairouan"
+      },
+      {
+        "Id": 527,
+        "NameAr": "نصرالله",
+        "NameEn": "Nasrallah"
+      },
+      {
+        "Id": 525,
+        "NameAr": "الوسلاتية",
+        "NameEn": "Oueslatia"
+      },
+      {
+        "Id": 521,
+        "NameAr": "السبيخة",
+        "NameEn": "Sebikha"
+      }
+    ]
+  },
+  {
+    "Id": 363,
+    "NameAr": "الكاف",
+    "NameEn": "Le kef",
+    "Delegations": [
+      {
+        "Id": 590,
+        "NameAr": "الدهماني",
+        "NameEn": "Dahmani"
+      },
+      {
+        "Id": 583,
+        "NameAr": "القصور",
+        "NameEn": "El Ksour"
+      },
+      {
+        "Id": 585,
+        "NameAr": "الجريسة",
+        "NameEn": "Jerissa"
+      },
+      {
+        "Id": 587,
+        "NameAr": "القلعة الخصبة",
+        "NameEn": "Kalâa El Khasba"
+      },
+      {
+        "Id": 588,
+        "NameAr": "قلعة السنان",
+        "NameEn": "Kalaat Sinane"
+      },
+      {
+        "Id": 636,
+        "NameAr": "الكاف",
+        "NameEn": "Le Kef"
+      },
+      {
+        "Id": 584,
+        "NameAr": "السرس",
+        "NameEn": "Le Sers"
+      },
+      {
+        "Id": 589,
+        "NameAr": "نبر",
+        "NameEn": "Nebeur"
+      },
+      {
+        "Id": 591,
+        "NameAr": "ساقية سيدي يوسف",
+        "NameEn": "Sakiet Sidi Youssef"
+      },
+      {
+        "Id": 586,
+        "NameAr": "تاجروين",
+        "NameEn": "Tejerouine"
+      },
+      {
+        "Id": 1523,
+        "NameAr": "الطويرف",
+        "NameEn": "Tourief"
+      }
+    ]
+  },
+  {
+    "Id": 364,
+    "NameAr": "المنستير",
+    "NameEn": "Monastir",
+    "Delegations": [
+      {
+        "Id": 601,
+        "NameAr": "البقالطة",
+        "NameEn": "Bekalta"
+      },
+      {
+        "Id": 603,
+        "NameAr": "بنبلة",
+        "NameEn": "Benbla"
+      },
+      {
+        "Id": 597,
+        "NameAr": "بني حسان",
+        "NameEn": "Beni Hassan"
+      },
+      {
+        "Id": 595,
+        "NameAr": "جمال",
+        "NameEn": "Jammel"
+      },
+      {
+        "Id": 602,
+        "NameAr": "قصر هلال",
+        "NameEn": "Ksar Helal"
+      },
+      {
+        "Id": 599,
+        "NameAr": "قصيبة المديوني",
+        "NameEn": "Ksibet Medyouni"
+      },
+      {
+        "Id": 598,
+        "NameAr": "المكنين",
+        "NameEn": "Moknine"
+      },
+      {
+        "Id": 637,
+        "NameAr": "المنستير",
+        "NameEn": "Monastir"
+      },
+      {
+        "Id": 593,
+        "NameAr": "الوردانين",
+        "NameEn": "Ouerdanine"
+      },
+      {
+        "Id": 592,
+        "NameAr": "الساحلين",
+        "NameEn": "Sahline"
+      },
+      {
+        "Id": 600,
+        "NameAr": "صيادة",
+        "NameEn": "Sayada Lamta Bouhjar"
+      },
+      {
+        "Id": 594,
+        "NameAr": "طبلبة",
+        "NameEn": "Teboulba"
+      },
+      {
+        "Id": 596,
+        "NameAr": "زرامدين",
+        "NameEn": "Zeramdine"
+      }
+    ]
+  },
+  {
+    "Id": 345,
+    "NameAr": "المهدية",
+    "NameEn": "Mahdia",
+    "Delegations": [
+      {
+        "Id": 427,
+        "NameAr": "بومرداس",
+        "NameEn": "Boumerdes"
+      },
+      {
+        "Id": 424,
+        "NameAr": "الشابة",
+        "NameEn": "Chebba"
+      },
+      {
+        "Id": 429,
+        "NameAr": "شربان",
+        "NameEn": "Chorbane"
+      },
+      {
+        "Id": 619,
+        "NameAr": "الجم",
+        "NameEn": "El Jem"
+      },
+      {
+        "Id": 430,
+        "NameAr": "هبيرة",
+        "NameEn": "Hbira"
+      },
+      {
+        "Id": 423,
+        "NameAr": "قصور الساف",
+        "NameEn": "Ksour Essef"
+      },
+      {
+        "Id": 618,
+        "NameAr": "المهدية",
+        "NameEn": "Mahdia"
+      },
+      {
+        "Id": 425,
+        "NameAr": "مللولش",
+        "NameEn": "Malloulech"
+      },
+      {
+        "Id": 431,
+        "NameAr": "أولاد شامخ",
+        "NameEn": "Ouled Chamekh"
+      },
+      {
+        "Id": 1084,
+        "NameAr": "الرجيش",
+        "NameEn": "Rejiche"
+      },
+      {
+        "Id": 426,
+        "NameAr": "سيدي علوان",
+        "NameEn": "Sidi Alouane"
+      },
+      {
+        "Id": 428,
+        "NameAr": "السواسي",
+        "NameEn": "Souassi"
+      }
+    ]
+  },
+  {
+    "Id": 356,
+    "NameAr": "باجة",
+    "NameEn": "Beja",
+    "Delegations": [
+      {
+        "Id": 515,
+        "NameAr": "عمدون",
+        "NameEn": "Amdoun"
+      },
+      {
+        "Id": 629,
+        "NameAr": "باجة",
+        "NameEn": "Beja"
+      },
+      {
+        "Id": 519,
+        "NameAr": "قبلاط",
+        "NameEn": "Goubellat"
+      },
+      {
+        "Id": 520,
+        "NameAr": "مجاز الباب",
+        "NameEn": "Mejez El Bab"
+      },
+      {
+        "Id": 514,
+        "NameAr": "نفزة",
+        "NameEn": "Nefza"
+      },
+      {
+        "Id": 518,
+        "NameAr": "تبرسق",
+        "NameEn": "Teboursouk"
+      },
+      {
+        "Id": 517,
+        "NameAr": "تستور",
+        "NameEn": "Testour"
+      },
+      {
+        "Id": 516,
+        "NameAr": "تيبار",
+        "NameEn": "Tibar"
+      }
+    ]
+  },
+  {
+    "Id": 349,
+    "NameAr": "بن عروس",
+    "NameEn": "Ben Arous",
+    "Delegations": [
+      {
+        "Id": 622,
+        "NameAr": "بن عروس",
+        "NameEn": "Ben Arous"
+      },
+      {
+        "Id": 453,
+        "NameAr": "بومهل البساتين",
+        "NameEn": "Boumhel Bassatine"
+      },
+      {
+        "Id": 447,
+        "NameAr": "المروج",
+        "NameEn": "El Mourouj"
+      },
+      {
+        "Id": 450,
+        "NameAr": "الزهرة",
+        "NameEn": "Ezzahra"
+      },
+      {
+        "Id": 446,
+        "NameAr": "فوشانة",
+        "NameEn": "Fouchana"
+      },
+      {
+        "Id": 452,
+        "NameAr": "حمام الشط",
+        "NameEn": "Hammam Chatt"
+      },
+      {
+        "Id": 451,
+        "NameAr": "حمام الأنف",
+        "NameEn": "Hammam Lif"
+      },
+      {
+        "Id": 454,
+        "NameAr": "المدينة الجديدة",
+        "NameEn": "Medina Jedida"
+      },
+      {
+        "Id": 448,
+        "NameAr": "مقرين",
+        "NameEn": "Megrine"
+      },
+      {
+        "Id": 445,
+        "NameAr": "المحمدية",
+        "NameEn": "Mohamedia"
+      },
+      {
+        "Id": 444,
+        "NameAr": "مرناق",
+        "NameEn": "Mornag"
+      },
+      {
+        "Id": 449,
+        "NameAr": "رادس",
+        "NameEn": "Rades"
+      }
+    ]
+  },
+  {
+    "Id": 361,
+    "NameAr": "بنزرت",
+    "NameEn": "Bizerte",
+    "Delegations": [
+      {
+        "Id": 572,
+        "NameAr": "الختمين",
+        "NameEn": "Al Khitmin"
+      },
+      {
+        "Id": 569,
+        "NameAr": "المتلين",
+        "NameEn": "Al Matlin "
+      },
+      {
+        "Id": 571,
+        "NameAr": "عوسجة",
+        "NameEn": "Aousja"
+      },
+      {
+        "Id": 634,
+        "NameAr": "بنزرت",
+        "NameEn": "Bizerte"
+      },
+      {
+        "Id": 566,
+        "NameAr": "العالية",
+        "NameEn": "El Alia"
+      },
+      {
+        "Id": 563,
+        "NameAr": "غار الملح",
+        "NameEn": "Ghar El Melh"
+      },
+      {
+        "Id": 560,
+        "NameAr": "غزالة",
+        "NameEn": "Ghezala"
+      },
+      {
+        "Id": 558,
+        "NameAr": "جومين",
+        "NameEn": "Joumine"
+      },
+      {
+        "Id": 559,
+        "NameAr": "ماطر",
+        "NameEn": "Mateur"
+      },
+      {
+        "Id": 562,
+        "NameAr": "منزل برقيبة",
+        "NameEn": "Menzel Bourguiba"
+      },
+      {
+        "Id": 561,
+        "NameAr": "منزل جميل",
+        "NameEn": "Menzel Jemil"
+      },
+      {
+        "Id": 564,
+        "NameAr": "رأس الجبل",
+        "NameEn": "Ras Jebel"
+      },
+      {
+        "Id": 557,
+        "NameAr": "سجنان",
+        "NameEn": "Sejnane"
+      },
+      {
+        "Id": 565,
+        "NameAr": "تينجة",
+        "NameEn": "Tinja"
+      },
+      {
+        "Id": 567,
+        "NameAr": "أوتيك",
+        "NameEn": "Utique"
+      },
+      {
+        "Id": 568,
+        "NameAr": "جرزونة",
+        "NameEn": "Zarzouna"
+      },
+      {
+        "Id": 570,
+        "NameAr": "الزواوين",
+        "NameEn": "Zouaouine"
+      }
+    ]
+  },
+  {
+    "Id": 351,
+    "NameAr": "تطاوين",
+    "NameEn": "Tataouine",
+    "Delegations": [
+      {
+        "Id": 474,
+        "NameAr": "بئر الأحمر",
+        "NameEn": "Bir Lahmar"
+      },
+      {
+        "Id": 1524,
+        "NameAr": "بني مهيرة",
+        "NameEn": "Bni Mhira"
+      },
+      {
+        "Id": 475,
+        "NameAr": "برج الخضراء",
+        "NameEn": "Borj El Khadra"
+      },
+      {
+        "Id": 470,
+        "NameAr": "الذهيبة",
+        "NameEn": "Dehiba"
+      },
+      {
+        "Id": 476,
+        "NameAr": "البرمة",
+        "NameEn": "El Borma"
+      },
+      {
+        "Id": 473,
+        "NameAr": "غمراسن",
+        "NameEn": "Ghomrassen"
+      },
+      {
+        "Id": 471,
+        "NameAr": "رمادة",
+        "NameEn": "Remada"
+      },
+      {
+        "Id": 472,
+        "NameAr": "السمار",
+        "NameEn": "Smar"
+      },
+      {
+        "Id": 624,
+        "NameAr": "تطاوين",
+        "NameEn": "Tataouine"
+      }
+    ]
+  },
+  {
+    "Id": 352,
+    "NameAr": "توزر",
+    "NameEn": "Tozeur",
+    "Delegations": [
+      {
+        "Id": 478,
+        "NameAr": "دقاش",
+        "NameEn": "Degueche"
+      },
+      {
+        "Id": 481,
+        "NameAr": "حامة الجريد",
+        "NameEn": "Hammat Al Jarid"
+      },
+      {
+        "Id": 479,
+        "NameAr": "حزوة",
+        "NameEn": "Hazoua"
+      },
+      {
+        "Id": 477,
+        "NameAr": "نفطة",
+        "NameEn": "Nefta"
+      },
+      {
+        "Id": 480,
+        "NameAr": "تمغزة",
+        "NameEn": "Tameghza"
+      },
+      {
+        "Id": 625,
+        "NameAr": "توزر",
+        "NameEn": "Tozeur"
+      }
+    ]
+  },
+  {
+    "Id": 342,
+    "NameAr": "تونس",
+    "NameEn": "Tunis",
+    "Delegations": [
+      {
+        "Id": 404,
+        "NameAr": "باب بحر",
+        "NameEn": "Bab Bhar"
+      },
+      {
+        "Id": 395,
+        "NameAr": "باب سويقة",
+        "NameEn": "Bab Souika"
+      },
+      {
+        "Id": 394,
+        "NameAr": "باردو",
+        "NameEn": "Bardo"
+      },
+      {
+        "Id": 387,
+        "NameAr": "قرطاج",
+        "NameEn": "Carthage"
+      },
+      {
+        "Id": 389,
+        "NameAr": "حي الخضراء",
+        "NameEn": "Cite El Khadhra"
+      },
+      {
+        "Id": 397,
+        "NameAr": "الحرايرية",
+        "NameEn": "El Hrairia"
+      },
+      {
+        "Id": 400,
+        "NameAr": "كبارية",
+        "NameEn": "El Kabaria"
+      },
+      {
+        "Id": 390,
+        "NameAr": "المنزه",
+        "NameEn": "El Menzah"
+      },
+      {
+        "Id": 399,
+        "NameAr": "الوردية",
+        "NameEn": "El Ouardia"
+      },
+      {
+        "Id": 393,
+        "NameAr": "التحرير",
+        "NameEn": "Ettahrir"
+      },
+      {
+        "Id": 396,
+        "NameAr": "الزهور",
+        "NameEn": "Ezzouhour"
+      },
+      {
+        "Id": 401,
+        "NameAr": "جبل جلود",
+        "NameEn": "Jebel Jelloud"
+      },
+      {
+        "Id": 388,
+        "NameAr": "حلق الواد",
+        "NameEn": "Goulette"
+      },
+      {
+        "Id": 386,
+        "NameAr": "المرسى",
+        "NameEn": "La Marsa"
+      },
+      {
+        "Id": 403,
+        "NameAr": "المدينة",
+        "NameEn": "La Medina"
+      },
+      {
+        "Id": 406,
+        "NameAr": "الكرم",
+        "NameEn": "Le Kram"
+      },
+      {
+        "Id": 391,
+        "NameAr": "العمران",
+        "NameEn": "Omrane"
+      },
+      {
+        "Id": 392,
+        "NameAr": "العمران الأعلى",
+        "NameEn": "Omrane Superieur"
+      },
+      {
+        "Id": 402,
+        "NameAr": "سيدي البشير",
+        "NameEn": "Sidi El Bechir"
+      },
+      {
+        "Id": 398,
+        "NameAr": "سيدي حسين",
+        "NameEn": "Sidi Hassine"
+      },
+      {
+        "Id": 405,
+        "NameAr": "السيجومي",
+        "NameEn": "Sijoumi"
+      },
+      {
+        "Id": 615,
+        "NameAr": "مدينة تونس",
+        "NameEn": "Tunis"
+      }
+    ]
+  },
+  {
+    "Id": 354,
+    "NameAr": "جندوبة",
+    "NameEn": "Jendouba",
+    "Delegations": [
+      {
+        "Id": 498,
+        "NameAr": "عين دراهم",
+        "NameEn": "Ain Drahem"
+      },
+      {
+        "Id": 503,
+        "NameAr": "بلطة بوعوان",
+        "NameEn": "Balta Bou Aouane"
+      },
+      {
+        "Id": 499,
+        "NameAr": "بوسالم",
+        "NameEn": "Bou Salem"
+      },
+      {
+        "Id": 502,
+        "NameAr": "فرنانة",
+        "NameEn": "Fernana"
+      },
+      {
+        "Id": 501,
+        "NameAr": "غار الدماء",
+        "NameEn": "Ghardimaou"
+      },
+      {
+        "Id": 627,
+        "NameAr": "جندوبة",
+        "NameEn": "Jendouba"
+      },
+      {
+        "Id": 500,
+        "NameAr": "واد مليز",
+        "NameEn": "Oued Mliz"
+      },
+      {
+        "Id": 497,
+        "NameAr": "طبرقة",
+        "NameEn": "Tabarka"
+      }
+    ]
+  },
+  {
+    "Id": 343,
+    "NameAr": "زغوان",
+    "NameEn": "Zaghouan",
+    "Delegations": [
+      {
+        "Id": 410,
+        "NameAr": "بئر مشارقة",
+        "NameEn": "Bir Mcherga"
+      },
+      {
+        "Id": 411,
+        "NameAr": "الفحص",
+        "NameEn": "El Fahs"
+      },
+      {
+        "Id": 412,
+        "NameAr": "الناظور",
+        "NameEn": "Nadhour"
+      },
+      {
+        "Id": 413,
+        "NameAr": "صواف",
+        "NameEn": "Saouaf"
+      },
+      {
+        "Id": 616,
+        "NameAr": "زغوان",
+        "NameEn": "Zaghouan"
+      },
+      {
+        "Id": 409,
+        "NameAr": "الزريبة",
+        "NameEn": "Zeriba"
+      }
+    ]
+  },
+  {
+    "Id": 344,
+    "NameAr": "سليانة",
+    "NameEn": "Siliana",
+    "Delegations": [
+      {
+        "Id": 417,
+        "NameAr": "برقو",
+        "NameEn": "Bargou"
+      },
+      {
+        "Id": 420,
+        "NameAr": "بوعرادة",
+        "NameEn": "Bouarada"
+      },
+      {
+        "Id": 419,
+        "NameAr": "العروسة",
+        "NameEn": "El Aroussa"
+      },
+      {
+        "Id": 418,
+        "NameAr": "قعفور",
+        "NameEn": "Gaafour"
+      },
+      {
+        "Id": 414,
+        "NameAr": "كسرى",
+        "NameEn": "Kesra"
+      },
+      {
+        "Id": 421,
+        "NameAr": "الكريب",
+        "NameEn": "Le Krib"
+      },
+      {
+        "Id": 415,
+        "NameAr": "مكثر",
+        "NameEn": "Makther"
+      },
+      {
+        "Id": 416,
+        "NameAr": "الروحية",
+        "NameEn": "Rouhia"
+      },
+      {
+        "Id": 422,
+        "NameAr": "بورويس",
+        "NameEn": "Sidi Bou Rouis"
+      },
+      {
+        "Id": 617,
+        "NameAr": "سليانة",
+        "NameEn": "Siliana"
+      }
+    ]
+  },
+  {
+    "Id": 348,
+    "NameAr": "سوسة",
+    "NameEn": "Sousse",
+    "Delegations": [
+      {
+        "Id": 437,
+        "NameAr": "أكودة",
+        "NameEn": "Akouda"
+      },
+      {
+        "Id": 433,
+        "NameAr": "بوفيشة",
+        "NameEn": "Bouficha"
+      },
+      {
+        "Id": 434,
+        "NameAr": "النفيضة",
+        "NameEn": "Enfida"
+      },
+      {
+        "Id": 438,
+        "NameAr": "حمام سوسة",
+        "NameEn": "Hammam Sousse"
+      },
+      {
+        "Id": 435,
+        "NameAr": "هرقلة",
+        "NameEn": "Hergla"
+      },
+      {
+        "Id": 439,
+        "NameAr": "القلعة الكبيرة",
+        "NameEn": "Kalaa Kebira"
+      },
+      {
+        "Id": 443,
+        "NameAr": "القلعة الصغيرة",
+        "NameEn": "Kalaa Seghira"
+      },
+      {
+        "Id": 442,
+        "NameAr": "كندار",
+        "NameEn": "Koundar"
+      },
+      {
+        "Id": 440,
+        "NameAr": "مساكن",
+        "NameEn": "Msaken"
+      },
+      {
+        "Id": 436,
+        "NameAr": "سيدي بوعلي",
+        "NameEn": "Sidi Bouali"
+      },
+      {
+        "Id": 441,
+        "NameAr": "سيدي الهاني",
+        "NameEn": "Sidi Elheni"
+      },
+      {
+        "Id": 621,
+        "NameAr": "سوسة",
+        "NameEn": "Sousse"
+      }
+    ]
+  },
+  {
+    "Id": 355,
+    "NameAr": "سيدي بوزيد",
+    "NameEn": "Sidi Bouzid",
+    "Delegations": [
+      {
+        "Id": 508,
+        "NameAr": "بئر الحفي",
+        "NameEn": "Bir El Hafey"
+      },
+      {
+        "Id": 1522,
+        "NameAr": "الهيشرية",
+        "NameEn": "Hichria"
+      },
+      {
+        "Id": 506,
+        "NameAr": "جلمة",
+        "NameEn": "Jelma"
+      },
+      {
+        "Id": 505,
+        "NameAr": "المكناسي",
+        "NameEn": "Meknassi"
+      },
+      {
+        "Id": 510,
+        "NameAr": "منزل بو زيان",
+        "NameEn": "Menzel Bouzayane"
+      },
+      {
+        "Id": 511,
+        "NameAr": "المزونة",
+        "NameEn": "Mezouna"
+      },
+      {
+        "Id": 512,
+        "NameAr": "أولاد حفوز",
+        "NameEn": "Ouled Haffouz"
+      },
+      {
+        "Id": 504,
+        "NameAr": "الرقاب",
+        "NameEn": "Regueb"
+      },
+      {
+        "Id": 507,
+        "NameAr": "سبالة أولاد عسكر",
+        "NameEn": "Sabbalet Ouled Asker"
+      },
+      {
+        "Id": 509,
+        "NameAr": "سيدي علي بن عون",
+        "NameEn": "Sidi Ali Ben Aoun"
+      },
+      {
+        "Id": 628,
+        "NameAr": "سيدي بوزيد",
+        "NameEn": "Sidi Bouzid"
+      },
+      {
+        "Id": 513,
+        "NameAr": "سوق الجديد",
+        "NameEn": "Souk Jedid"
+      }
+    ]
+  },
+  {
+    "Id": 359,
+    "NameAr": "صفاقس",
+    "NameEn": "Sfax",
+    "Delegations": [
+      {
+        "Id": 540,
+        "NameAr": "عقارب",
+        "NameEn": "Agareb"
+      },
+      {
+        "Id": 538,
+        "NameAr": "بئر علي بن خليفة",
+        "NameEn": "Bir Ali Ben Khelifa"
+      },
+      {
+        "Id": 545,
+        "NameAr": "العامرة",
+        "NameEn": "El Amra"
+      },
+      {
+        "Id": 541,
+        "NameAr": "الحنشة",
+        "NameEn": "El Hencha"
+      },
+      {
+        "Id": 539,
+        "NameAr": "الغريبة",
+        "NameEn": "Ghraiba"
+      },
+      {
+        "Id": 536,
+        "NameAr": "جبنيانة",
+        "NameEn": "Jebiniana"
+      },
+      {
+        "Id": 543,
+        "NameAr": "قرقنة العطايا",
+        "NameEn": "Kerkennah El Attaya"
+      },
+      {
+        "Id": 544,
+        "NameAr": "قرقنة مليتة",
+        "NameEn": "Kerkennah Mellita"
+      },
+      {
+        "Id": 537,
+        "NameAr": "المحرس",
+        "NameEn": "Mahres"
+      },
+      {
+        "Id": 542,
+        "NameAr": "منزل شاكر",
+        "NameEn": "Menzel Chaker"
+      },
+      {
+        "Id": 548,
+        "NameAr": "ساقية الداير",
+        "NameEn": "Sakiet Eddaier"
+      },
+      {
+        "Id": 547,
+        "NameAr": "ساقية الزيت",
+        "NameEn": "Sakiet Ezzit"
+      },
+      {
+        "Id": 632,
+        "NameAr": "صفاقس",
+        "NameEn": "Sfax"
+      },
+      {
+        "Id": 546,
+        "NameAr": "الصخيرة",
+        "NameEn": "Skhira"
+      },
+      {
+        "Id": 549,
+        "NameAr": "تينة",
+        "NameEn": "Tina"
+      }
+    ]
+  },
+  {
+    "Id": 347,
+    "NameAr": "قابس",
+    "NameEn": "Gabes",
+    "Delegations": [
+      {
+        "Id": 1024,
+        "NameAr": "الحامة",
+        "NameEn": "El Hamma"
+      },
+      {
+        "Id": 620,
+        "NameAr": "قابس",
+        "NameEn": "Gabes"
+      },
+      {
+        "Id": 1019,
+        "NameAr": "غنوش",
+        "NameEn": "Ghannouch"
+      },
+      {
+        "Id": 1020,
+        "NameAr": "مارث",
+        "NameEn": "Mareth"
+      },
+      {
+        "Id": 1022,
+        "NameAr": "مطماطا",
+        "NameEn": "Matmata"
+      },
+      {
+        "Id": 1023,
+        "NameAr": "مطماطا الجديدة",
+        "NameEn": "Matmata Nouvelle"
+      },
+      {
+        "Id": 1021,
+        "NameAr": "منزل حبيب",
+        "NameEn": "Menzel Habib"
+      },
+      {
+        "Id": 1025,
+        "NameAr": "المطوية",
+        "NameEn": "Metouia"
+      }
+    ]
+  },
+  {
+    "Id": 1012,
+    "NameAr": "قبلي",
+    "NameEn": "Kebili",
+    "Delegations": [
+      {
+        "Id": 484,
+        "NameAr": "دوز",
+        "NameEn": "Douz"
+      },
+      {
+        "Id": 485,
+        "NameAr": "الفوار",
+        "NameEn": "El Faouar"
+      },
+      {
+        "Id": 482,
+        "NameAr": "قبلي",
+        "NameEn": "Kebili"
+      },
+      {
+        "Id": 486,
+        "NameAr": "المطروحة",
+        "NameEn": "Matrouha"
+      },
+      {
+        "Id": 487,
+        "NameAr": "رجيم معتوق",
+        "NameEn": "Rjim Maatoug"
+      },
+      {
+        "Id": 483,
+        "NameAr": "سوق الأحد",
+        "NameEn": "Souk El Ahad"
+      }
+    ]
+  },
+  {
+    "Id": 365,
+    "NameAr": "قفصة",
+    "NameEn": "Gafsa",
+    "Delegations": [
+      {
+        "Id": 612,
+        "NameAr": "بلخير",
+        "NameEn": "Belkhir"
+      },
+      {
+        "Id": 611,
+        "NameAr": "القطار",
+        "NameEn": "El Guettar"
+      },
+      {
+        "Id": 608,
+        "NameAr": "القصر",
+        "NameEn": "El Ksar"
+      },
+      {
+        "Id": 638,
+        "NameAr": "قفصة",
+        "NameEn": "Gafsa"
+      },
+      {
+        "Id": 607,
+        "NameAr": "المظيلة",
+        "NameEn": "Mdhilla"
+      },
+      {
+        "Id": 606,
+        "NameAr": "المتلوي",
+        "NameEn": "Metlaoui"
+      },
+      {
+        "Id": 604,
+        "NameAr": "أم العرايس",
+        "NameEn": "Moulares"
+      },
+      {
+        "Id": 605,
+        "NameAr": "الرديف",
+        "NameEn": "Redyef"
+      },
+      {
+        "Id": 609,
+        "NameAr": "السند",
+        "NameEn": "Sened"
+      },
+      {
+        "Id": 610,
+        "NameAr": "سيدي عيش",
+        "NameEn": "Sidi Aich"
+      }
+    ]
+  },
+  {
+    "Id": 353,
+    "NameAr": "مدنين",
+    "NameEn": "Medenine",
+    "Delegations": [
+      {
+        "Id": 488,
+        "NameAr": "بن قردان",
+        "NameEn": "Ben Guerdene"
+      },
+      {
+        "Id": 489,
+        "NameAr": "بني خداش",
+        "NameEn": "Beni Khedach"
+      },
+      {
+        "Id": 493,
+        "NameAr": "جربة آجيم",
+        "NameEn": "Djerba Ajim"
+      },
+      {
+        "Id": 491,
+        "NameAr": "جربة الماي",
+        "NameEn": "Djerba El May"
+      },
+      {
+        "Id": 494,
+        "NameAr": "جربة حومة السوق",
+        "NameEn": "Djerba Houmt Souk"
+      },
+      {
+        "Id": 492,
+        "NameAr": "جربة ميدون",
+        "NameEn": "Djerba Midoun"
+      },
+      {
+        "Id": 626,
+        "NameAr": "مدنين",
+        "NameEn": "Medenine"
+      },
+      {
+        "Id": 496,
+        "NameAr": "سيدي مخلوف",
+        "NameEn": "Sidi Makhlouf"
+      },
+      {
+        "Id": 490,
+        "NameAr": "جرجيس",
+        "NameEn": "Zarzis"
+      }
+    ]
+  },
+  {
+    "Id": 360,
+    "NameAr": "منوبة",
+    "NameEn": "Manouba",
+    "Delegations": [
+      {
+        "Id": 552,
+        "NameAr": "برج العامري",
+        "NameEn": "Borj El Amri"
+      },
+      {
+        "Id": 554,
+        "NameAr": "دوار هيشر",
+        "NameEn": "Douar Hicher"
+      },
+      {
+        "Id": 551,
+        "NameAr": "البطان",
+        "NameEn": "El Battan"
+      },
+      {
+        "Id": 550,
+        "NameAr": "الجديدة",
+        "NameEn": "Jedaida"
+      },
+      {
+        "Id": 633,
+        "NameAr": "منوبة",
+        "NameEn": "Manouba"
+      },
+      {
+        "Id": 555,
+        "NameAr": "المرناقية",
+        "NameEn": "Mornaguia"
+      },
+      {
+        "Id": 553,
+        "NameAr": "واد الليل",
+        "NameEn": "Oued Ellil"
+      },
+      {
+        "Id": 556,
+        "NameAr": "طبربة",
+        "NameEn": "Tebourba"
+      }
+    ]
+  },
+  {
+    "Id": 350,
+    "NameAr": "نابل",
+    "NameEn": "Nabeul",
+    "Delegations": [
+      {
+        "Id": 467,
+        "NameAr": "بني خلاد",
+        "NameEn": "Beni Khalled"
+      },
+      {
+        "Id": 460,
+        "NameAr": "بني خيار ",
+        "NameEn": "Beni Khiar"
+      },
+      {
+        "Id": 463,
+        "NameAr": "بوعرقوب",
+        "NameEn": "Bou Argoub"
+      },
+      {
+        "Id": 468,
+        "NameAr": "دار شعبان الفهري",
+        "NameEn": "Dar Chaabane Elfehri"
+      },
+      {
+        "Id": 466,
+        "NameAr": "الهوارية",
+        "NameEn": "El Haouaria"
+      },
+      {
+        "Id": 457,
+        "NameAr": "الميدة",
+        "NameEn": "El Mida"
+      },
+      {
+        "Id": 464,
+        "NameAr": "قرمبالية",
+        "NameEn": "Grombalia"
+      },
+      {
+        "Id": 469,
+        "NameAr": "حمام الغزاز",
+        "NameEn": "Hammam Ghezaz"
+      },
+      {
+        "Id": 461,
+        "NameAr": "الحمامات",
+        "NameEn": "Hammamet"
+      },
+      {
+        "Id": 455,
+        "NameAr": "قليبية",
+        "NameEn": "Kelibia"
+      },
+      {
+        "Id": 459,
+        "NameAr": "قربة",
+        "NameEn": "Korba"
+      },
+      {
+        "Id": 458,
+        "NameAr": "منزل بوزلفة",
+        "NameEn": "Menzel Bouzelfa"
+      },
+      {
+        "Id": 456,
+        "NameAr": "منزل تميم",
+        "NameEn": "Menzel Temime"
+      },
+      {
+        "Id": 623,
+        "NameAr": "نابل",
+        "NameEn": "Nabeul"
+      },
+      {
+        "Id": 465,
+        "NameAr": "سليمان",
+        "NameEn": "Slimane"
+      },
+      {
+        "Id": 462,
+        "NameAr": "تاكلسة",
+        "NameEn": "Takelsa"
+      }
+    ]
+  }
+]

@@ -36,7 +36,7 @@ namespace TunisiaPrayer.Models
         public List<Rootobject> LoadData()
         {
             var assembly = IntrospectionExtensions.GetTypeInfo(typeof(App)).Assembly;
-            Stream stream = assembly.GetManifestResourceStream($"TunisiaPrayer.states.json");
+            Stream stream = assembly.GetManifestResourceStream($"TunisiaPrayer.Resources.states.json");
             //string text = "";
             using (var reader = new StreamReader(stream))
             {
