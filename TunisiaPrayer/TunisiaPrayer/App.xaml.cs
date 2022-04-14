@@ -6,6 +6,10 @@ using Xamarin.Essentials;
 using System;
 using System.Threading.Tasks;
 
+
+
+[assembly: ExportFont("me_quran Regular.ttf", Alias = "QuranFont")]
+
 namespace TunisiaPrayer
 {
     public partial class App : Application

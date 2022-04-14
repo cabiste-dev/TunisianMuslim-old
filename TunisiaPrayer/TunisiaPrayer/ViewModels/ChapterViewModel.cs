@@ -42,6 +42,11 @@ namespace TunisiaPrayer.ViewModels
             var client = new HttpClient();
             string response = await client.GetStringAsync(url);
             Verses = JsonConvert.DeserializeObject<VerseRootobject>(response);
+
+            for (int i = 0; i < Verses.verses.Length; i++)
+            {
+                Verses.verses[i].VerseNumber = i + 1;
+            }
             IsBusy = false;
         }
     }

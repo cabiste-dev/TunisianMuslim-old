@@ -1,4 +1,6 @@
-﻿namespace TunisiaPrayer.Models
+﻿using System;
+
+namespace TunisiaPrayer.Models
 {
     public class VerseRootobject
     {
@@ -10,5 +12,8 @@
         public int id { get; set; }
         public string verse_key { get; set; }
         public string text_uthmani { get; set; }
+
+        public int VerseNumber { get; set; }
+
     }
 }

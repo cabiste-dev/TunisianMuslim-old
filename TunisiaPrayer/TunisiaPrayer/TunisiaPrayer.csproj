@@ -7,10 +7,12 @@
 
   <ItemGroup>
     <None Remove="Resources\bismallah.png" />
+    <None Remove="Resources\Fonts\me_quran Regular.ttf" />
     <None Remove="states.json" />
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="Resources\Fonts\me_quran Regular.ttf" />
     <EmbeddedResource Include="Resources\states.json" />
   </ItemGroup>
 
