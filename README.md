@@ -1,6 +1,9 @@
+![app icon](https://raw.githubusercontent.com/cabiste69/TunisianMuslim/main/TunisiaPrayer/TunisiaPrayer.Android/Resources/mipmap-xxhdpi/ic_launcher.png)
+
 # TunisianMuslim
 
 An android app for everything Islam-related in Tunisia; Prayer Time, Quran and Qibla (soon) 
+
 
 # Credits
 
